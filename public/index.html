@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Octagonle — Guess the UFC Fighter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="guess-box">
+      <span class="qmark">?</span>
+      <input id="guess-input" type="text" autocomplete="off" placeholder="Guess a fighter…" list="fighter-list">
+      <datalist id="fighter-list"></datalist>
+    </div>
+    <button id="silhouette-btn" class="btn">
+      <span class="ico">👤</span> Show Silhouette
+    </button>
+    <div id="timer" class="timer">00:00</div>
+  </header>
+
+  <!-- Win / reveal banner (hidden until solved) -->
+  <section id="reveal" class="reveal hidden">
+    <div class="reveal-card">
+      <img id="reveal-img" class="reveal-img" alt="fighter">
+      <div class="reveal-info">
+        <div class="reveal-label">Today's Fighter is…</div>
+        <div id="reveal-name" class="reveal-name">—</div>
+        <hr>
+        <div class="reveal-stats" id="reveal-stats"></div>
+      </div>
+    </div>
+    <div class="reveal-side">
+      <div class="reveal-actions">
+        <button id="share-btn" class="btn">↗ Share</button>
+        <button id="play-again-btn" class="btn btn-accent">▶ Play Again</button>
+      </div>
+      <div class="reveal-result">
+        <div id="result-title" class="result-title">You won!</div>
+        <div class="result-sub">You got it in…</div>
+        <div id="result-guesses" class="result-guesses">0 guesses</div>
+        <div class="result-sub">Current Streak</div>
+        <div id="result-streak" class="result-streak">0</div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="grid-header">
+      <div class="col col-name">Name</div>
+      <div class="col">Div</div>
+      <div class="col">Nation</div>
+      <div class="col">Wins</div>
+      <div class="col">Losses</div>
+      <div class="col">Height</div>
+      <div class="col">Age</div>
+      <div class="col">Stance</div>
+      <div class="col">Debut</div>
+      <div class="col">Champ</div>
+    </div>
+    <div id="rows"></div>
+  </main>
+
+  <div id="silhouette-modal" class="silhouette-modal hidden">
+    <img id="silhouette-img" class="silhouette-img" alt="silhouette">
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
