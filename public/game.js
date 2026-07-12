@@ -85,8 +85,30 @@ async function load(){
   newGame();
 }
 
+// Target selection is weighted, not uniform, so familiar (higher-win) names and
+// champions come up more often.
+const WIN_EXP = 1.5;       // superlinear bias toward higher win totals
+const CHAMP_BOOST = 1.25;  // champions (current or former) 25% more likely
+
+function fighterWeight(f){
+  const wins = Math.max(f.wins || 0, 1);   // floor of 1 so nobody is impossible
+  let w = Math.pow(wins, WIN_EXP);
+  if (f.isChampion) w *= CHAMP_BOOST;
+  return w;
+}
+
+function pickTarget(){
+  const total = DATA.reduce((s, f) => s + fighterWeight(f), 0);
+  let r = Math.random() * total;
+  for (const f of DATA){
+    r -= fighterWeight(f);
+    if (r <= 0) return f;
+  }
+  return DATA[DATA.length - 1];
+}
+
 function newGame(){
-  target = DATA[Math.floor(Math.random() * DATA.length)];
+  target = pickTarget();
   guessed = new Set();
   guessCount = 0;
   solved = false;
