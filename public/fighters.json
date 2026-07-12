@@ -735,7 +735,7 @@
    "draws": 1,
    "record": "17-5-1",
    "debutYear": 2016,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3136287.png"
@@ -1407,7 +1407,7 @@
    "draws": 0,
    "record": "34-24-0",
    "debutYear": 2000,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354269.png"
@@ -3423,7 +3423,7 @@
    "draws": 0,
    "record": "15-1-0",
    "debutYear": 2020,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4695736.png"
@@ -4116,7 +4116,7 @@
    "draws": 0,
    "record": "16-8-0",
    "debutYear": 2011,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2553993.png"
@@ -4473,7 +4473,7 @@
    "draws": 0,
    "record": "15-8-0",
    "debutYear": 2015,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 4,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3163637.png"
@@ -4620,7 +4620,7 @@
    "draws": 0,
    "record": "22-7-0",
    "debutYear": 2013,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3022677.png"
@@ -5985,7 +5985,7 @@
    "draws": 0,
    "record": "24-4-0",
    "debutYear": 2011,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335888.png"
@@ -7203,7 +7203,7 @@
    "draws": 1,
    "record": "23-11-1",
    "debutYear": 2007,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 7,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335694.png"
@@ -7581,7 +7581,7 @@
    "draws": 0,
    "record": "10-5-0",
    "debutYear": 2013,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 2,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2552777.png"
@@ -8064,7 +8064,7 @@
    "draws": 0,
    "record": "15-7-0",
    "debutYear": 2015,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 5,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3028404.png"
@@ -9345,7 +9345,7 @@
    "draws": 2,
    "record": "29-11-2",
    "debutYear": 2014,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 1,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2506250.png"
@@ -9765,7 +9765,7 @@
    "draws": 0,
    "record": "26-15-0",
    "debutYear": 2013,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 2,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3024395.png"
@@ -10941,7 +10941,7 @@
    "draws": 0,
    "record": "32-10-0",
    "debutYear": 2011,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 6,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2447641.png"
@@ -13293,7 +13293,7 @@
    "draws": 0,
    "record": "16-6-0",
    "debutYear": 2013,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2519811.png"
@@ -13314,7 +13314,7 @@
    "draws": 0,
    "record": "16-5-0",
    "debutYear": 2018,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 7,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4021217.png"
@@ -14595,7 +14595,7 @@
    "draws": 1,
    "record": "27-14-1",
    "debutYear": 2007,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335514.png"
@@ -15225,7 +15225,7 @@
    "draws": 0,
    "record": "20-10-0",
    "debutYear": 2013,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2553021.png"
@@ -17388,7 +17388,7 @@
    "draws": 0,
    "record": "32-17-0",
    "debutYear": 2008,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 7,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335687.png"
@@ -17745,7 +17745,7 @@
    "draws": 0,
    "record": "16-10-0",
    "debutYear": 2013,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 9,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2995167.png"
@@ -19740,7 +19740,7 @@
    "draws": 0,
    "record": "18-5-0",
    "debutYear": 2011,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2611719.png"
@@ -20433,7 +20433,7 @@
    "draws": 0,
    "record": "26-11-0",
    "debutYear": 2011,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": false,
    "rank": null,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2560085.png"
@@ -21462,7 +21462,7 @@
    "draws": 0,
    "record": "21-5-0",
    "debutYear": 2014,
-   "isChampion": false,
+   "isChampion": true,
    "topTen": true,
    "rank": 7,
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3155420.png"
