@@ -137,12 +137,46 @@ def get_debut_year(aid):
     return None
 
 
+def top_ten_ids(refresh=False):
+    """Athlete ids ranked in the top 10 of any UFC ranking set (divisions + P4P).
+
+    Returns {athlete_id: best_rank}.
+    """
+    try:
+        idx = fetch(f"{API}/leagues/ufc/rankings", refresh=refresh)
+    except RuntimeError:
+        return {}
+    best = {}
+    for it in idx.get("items", []):
+        ref = it.get("$ref")
+        if not ref:
+            continue
+        try:
+            rset = fetch(ref, refresh=refresh)
+        except RuntimeError:
+            continue
+        for entry in rset.get("ranks", []):
+            pos = entry.get("current")
+            if pos is None or pos > 10:
+                continue
+            m = re.search(r"/athletes/(\d+)", (entry.get("athlete") or {}).get("$ref", ""))
+            if not m:
+                continue
+            aid = m.group(1)
+            if aid not in best or pos < best[aid]:
+                best[aid] = pos
+    return best
+
+
 def build(limit=None, refresh=False):
     try:
         from champions import CHAMPION_NAMES
     except ImportError:
         CHAMPION_NAMES = set()
     champ_norm = {norm_name(n) for n in CHAMPION_NAMES}
+
+    top10 = top_ten_ids(refresh=refresh)
+    print(f"[rankings] {len(top10)} top-10 ranked athletes", file=sys.stderr)
 
     ids = athlete_ids()
     if limit:
@@ -191,6 +225,8 @@ def build(limit=None, refresh=False):
             "record": rec["summary"],
             "debutYear": get_debut_year(aid),
             "isChampion": norm_name(name) in champ_norm,
+            "topTen": aid in top10,
+            "rank": top10.get(aid),
             "headshot": f"https://a.espncdn.com/i/headshots/mma/players/full/{aid}.png",
         })
         kept += 1
@@ -213,7 +249,8 @@ def build(limit=None, refresh=False):
     with open(OUT_PATH, "w") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     champs = sum(1 for f in fighters if f["isChampion"])
-    print(f"[done] {len(fighters)} fighters -> {OUT_PATH} ({champs} champions tagged)", file=sys.stderr)
+    ranked = sum(1 for f in fighters if f["topTen"])
+    print(f"[done] {len(fighters)} fighters -> {OUT_PATH} ({champs} champions, {ranked} top-10 ranked)", file=sys.stderr)
 
 
 if __name__ == "__main__":
