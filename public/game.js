@@ -20,15 +20,35 @@ function wcIndex(wc) {
 }
 
 // Nationality -> continent, so "close" nationality = same continent.
+// Covers every nationality present in fighters.json (kept in sync with the data).
 const CONTINENT = {
-  "USA":"NA","Canada":"NA","Mexico":"NA","Cuba":"NA","Jamaica":"NA",
-  "Brazil":"SA","Argentina":"SA","Ecuador":"SA","Peru":"SA","Chile":"SA","Suriname":"SA","Venezuela":"SA",
-  "Russia":"EU","Georgia":"EU","England":"EU","United Kingdom":"EU","Ireland":"EU","Scotland":"EU","Wales":"EU",
-  "France":"EU","Germany":"EU","Poland":"EU","Sweden":"EU","Netherlands":"EU","Spain":"EU","Italy":"EU",
-  "Czech Republic":"EU","Croatia":"EU","Serbia":"EU","Norway":"EU","Switzerland":"EU","Moldova":"EU","Ukraine":"EU","Armenia":"EU","Azerbaijan":"EU","Dagestan":"EU","Kazakhstan":"EU","Kyrgyzstan":"EU",
-  "China":"AS","Japan":"AS","South Korea":"AS","Kazakhstan ":"AS","Philippines":"AS","Thailand":"AS","India":"AS","Singapore":"AS","Mongolia":"AS",
+  // North America
+  "USA":"NA","Canada":"NA","Mexico":"NA","Cuba":"NA","Jamaica":"NA","Haiti":"NA",
+  "Dominican Republic":"NA","Puerto Rico":"NA","Panama":"NA","Aruba":"NA","Guam":"NA",
+  // South America
+  "Brazil":"SA","Argentina":"SA","Ecuador":"SA","Peru":"SA","Chile":"SA","Suriname":"SA",
+  "Venezuela":"SA","Colombia":"SA","Bolivia":"SA","Paraguay":"SA","Guyana":"SA",
+  // Europe
+  "Russia":"EU","Georgia":"EU","England":"EU","United Kingdom":"EU","Ireland":"EU",
+  "Scotland":"EU","Wales":"EU","France":"EU","Germany":"EU","Poland":"EU","Sweden":"EU",
+  "Netherlands":"EU","Spain":"EU","Italy":"EU","Czechia":"EU","Croatia":"EU","Serbia":"EU",
+  "Norway":"EU","Switzerland":"EU","Moldova":"EU","Ukraine":"EU","Armenia":"EU",
+  "Azerbaijan":"EU","Albania":"EU","Austria":"EU","Belarus":"EU","Belgium":"EU",
+  "Bosnia & Herzegovina":"EU","Cyprus":"EU","Denmark":"EU","Iceland":"EU","Lithuania":"EU",
+  "Luxembourg":"EU","Macedonia":"EU","Portugal":"EU","Romania":"EU","Slovakia":"EU",
+  "Türkiye":"EU",
+  // Asia
+  "China":"AS","Japan":"AS","South Korea":"AS","Korea":"AS","Kazakhstan":"AS",
+  "Philippines":"AS","Thailand":"AS","India":"AS","Mongolia":"AS","Kyrgyzstan":"AS",
+  "Uzbekistan":"AS","Tajikistan":"AS","Afghanistan":"AS","Bahrain":"AS","Hong Kong":"AS",
+  "Indonesia":"AS","Iraq":"AS","Israel":"AS","Lebanon":"AS","Myanmar":"AS","Palestine":"AS",
+  "United Arab Emirates":"AS","Vietnam":"AS",
+  // Oceania
   "Australia":"OC","New Zealand":"OC","Tonga":"OC","Samoa":"OC",
-  "Nigeria":"AF","Cameroon":"AF","South Africa":"AF","Morocco":"AF","Angola":"AF","Congo":"AF","DR Congo":"AF",
+  // Africa
+  "Nigeria":"AF","Cameroon":"AF","South Africa":"AF","Morocco":"AF","Angola":"AF",
+  "Congo":"AF","Democratic Republic of Congo":"AF","Egypt":"AF","Ghana":"AF","Niger":"AF",
+  "Senegal":"AF","Tunisia":"AF","Uganda":"AF","Zimbabwe":"AF",
 };
 function continent(nat){ return CONTINENT[nat] || null; }
 
