@@ -56,7 +56,19 @@ CHAMPION_NAMES = {
     "Rose Namajunas", "Jéssica Andrade", "Jessica Andrade", "Zhang Weili",
     "Mackenzie Dern",
 
-    # Interim champions not always listed among undisputed title holders
+    # --- Interim champions ---
+    # `isChampion` covers ANY held UFC title, undisputed OR interim (current or
+    # former). Most interim winners also held (or challenged for) the undisputed
+    # belt and so already appear above; the names below are interim-only holders
+    # who would otherwise be missed.
+    #
+    # Include ONLY fighters who actually WON an interim title. Do not add
+    # interim-title *challengers who lost* — e.g. Ovince Saint Preux (lost to
+    # Jones), Kelvin Gastelum (lost to Adesanya), Paddy Pimblett (lost to
+    # Gaethje) are NOT champions and must stay untagged.
+    #
+    # When refreshing the roster, verify each new interim champion won the bout;
+    # public list pages often mix in challengers.
     "Colby Covington",       # interim welterweight (2018)
     "Dustin Poirier",        # interim lightweight (2019)
     "Yair Rodríguez", "Yair Rodriguez",  # interim featherweight (2023)
