@@ -14,6 +14,7 @@ Endless mode: a new random active-roster fighter every game.
 data/
   build_dataset.py   # ESPN public API -> public/fighters.json
   champions.py       # curated champion name set (isChampion flag)
+  nationalities.py   # curated nationalities for fighters ESPN leaves blank
   borders.py         # GeoNames country-border adjacency (orange nationality)
   .cache/            # cached API responses (gitignore)
 public/
@@ -32,9 +33,11 @@ All fighter data comes from **ESPN's public MMA API** (no key/auth, JSON):
 - Records:  `.../athletes/{id}/records` — wins / losses / draws
 - Debut:    `.../athletes/{id}/eventlog` — earliest event year
 
-Champion status is merged from `data/champions.py`. Age is computed client-side
-from DOB so it never goes stale. Fetching happens only at build time and is
-cached; the live game hits no network API.
+Champion status is merged from `data/champions.py`. ESPN leaves many older
+fighters' nationality blank, so `data/nationalities.py` supplies curated
+nationalities that let the all-time **Classic — Extreme** pool include them. Age
+is computed client-side from DOB so it never goes stale. Fetching happens only at
+build time and is cached; the live game hits no network API.
 
 Country-border adjacency (the orange Nationality color) comes from **GeoNames'**
 public `countryInfo.txt` dump (CC BY 4.0), fetched at build time by

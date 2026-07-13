@@ -304,6 +304,14 @@ def build(limit=None, refresh=False):
         CHAMPION_NAMES = set()
     champ_norm = {norm_name(n) for n in CHAMPION_NAMES}
 
+    # Curated nationalities for fighters ESPN leaves blank (fills the all-time
+    # / Extreme cohort). Keyed by normalized name.
+    try:
+        from nationalities import NATIONALITIES
+    except ImportError:
+        NATIONALITIES = {}
+    curated_nat = {norm_name(k): v for k, v in NATIONALITIES.items()}
+
     top10 = top_ten_ids(refresh=refresh)
     print(f"[rankings] {len(top10)} top-10 ranked athletes", file=sys.stderr)
 
@@ -328,20 +336,23 @@ def build(limit=None, refresh=False):
         flag = (d.get("flag") or {})
         nationality = flag.get("alt")
         dob = d.get("dateOfBirth")
-        if not wc or not nationality or nationality == "default" or not dob:
+        name = d.get("displayName") or d.get("fullName")
+        # ESPN leaves many older fighters' nationality blank ("default"); fall back
+        # to the curated map so the all-time (Extreme) pool can include them.
+        if not nationality or nationality == "default":
+            nationality = curated_nat.get(norm_name(name))
+        if not wc or not nationality or not dob:
             continue
 
         rec = get_record(aid)
         if not rec:
             continue
 
-        # Era gate: include anyone whose most recent UFC bout is 2010 or later
-        # (Hard-mode superset; Normal is derived client-side from lastUfcYear).
+        # Keep anyone with a datable UFC career; the era pools (Normal / Hard /
+        # Extreme) are all derived client-side from lastUfcYear.
         debut_year, last_year = get_ufc_year_range(aid)
-        if not last_year or last_year < 2010:
+        if not last_year:
             continue
-
-        name = d.get("displayName") or d.get("fullName")
         is_champ = norm_name(name) in champ_norm
         # Champions get their full UFC fight log (for the Title Defense reveal) and
         # the title-only subset (for the clue panel / résumé summary).
@@ -407,9 +418,10 @@ def build(limit=None, refresh=False):
     ranked = sum(1 for f in fighters if f["topTen"])
     tbouts = sum(len(f["titleBouts"]) for f in fighters)
     afights = sum(len(f["ufcFights"]) for f in fighters)
+    hard_pool = sum(1 for f in fighters if (f["lastUfcYear"] or 0) >= 2010)
     normal_pool = sum(1 for f in fighters if (f["lastUfcYear"] or 0) >= 2023)
     print(f"[done] {len(fighters)} fighters -> {OUT_PATH} "
-          f"(Hard pool {len(fighters)} [2010+], Normal pool {normal_pool} [2023+]; "
+          f"(Extreme/all-time {len(fighters)}, Hard {hard_pool} [2010+], Normal {normal_pool} [2023+]; "
           f"{champs} champions, {ranked} top-10 ranked, "
           f"{tbouts} title bouts, {afights} total UFC fights, "
           f"{len(borders)} nationalities with borders)", file=sys.stderr)

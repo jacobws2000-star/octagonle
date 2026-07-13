@@ -72,6 +72,7 @@ if (mode === "classic") mode = "classic-normal";   // migrate old saved value
 const NORMAL_SINCE = new Date().getFullYear() - 3;  // "last 3 years"
 const HARD_SINCE = 2010;
 function inClassicPool(f){
+  if (mode === "classic-extreme") return true;   // all-time: every fighter in DATA
   const since = mode === "classic-hard" ? HARD_SINCE : NORMAL_SINCE;
   return (f.lastUfcYear || 0) >= since;
 }
@@ -80,6 +81,7 @@ function maxAttempts(){
   switch (mode){
     case "classic-normal": return 10;
     case "classic-hard":   return 12;
+    case "classic-extreme": return 13;
     case "title-normal":   return 5;
     case "title-hard":     return 6;
     default:               return 10;
@@ -150,7 +152,10 @@ function pickTarget(){
 
 // Title Defense targets: any champion with at least one completed title bout.
 function pickChampion(){
-  const pool = DATA.filter(f => f.isChampion && f.titleBouts && f.titleBouts.length);
+  // Title Defense keeps its established 2010+ champion pool even though DATA now
+  // includes pre-2010 fighters (added for Classic Extreme).
+  const pool = DATA.filter(f => f.isChampion && f.titleBouts && f.titleBouts.length
+                                && (f.lastUfcYear || 0) >= HARD_SINCE);
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
