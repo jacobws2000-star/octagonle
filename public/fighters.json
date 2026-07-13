@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generatedAt": "2026-07-13T00:38:12.517283+00:00",
+  "generatedAt": "2026-07-13T05:10:36.537894+00:00",
   "count": 1471,
   "source": "ESPN public MMA API"
  },
@@ -48623,5 +48623,451 @@
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5076027.png"
   }
- ]
+ ],
+ "borders": {
+  "Iraq": [
+   "Iran",
+   "Jordan",
+   "Türkiye"
+  ],
+  "Brazil": [
+   "Argentina",
+   "Bolivia",
+   "Colombia",
+   "Guyana",
+   "Paraguay",
+   "Peru",
+   "Suriname",
+   "Venezuela"
+  ],
+  "Georgia": [
+   "Armenia",
+   "Azerbaijan",
+   "Russia",
+   "Türkiye"
+  ],
+  "Ecuador": [
+   "Colombia",
+   "Peru"
+  ],
+  "South Africa": [
+   "Zimbabwe"
+  ],
+  "Dominican Republic": [
+   "Haiti"
+  ],
+  "Scotland": [
+   "England",
+   "Ireland",
+   "Wales"
+  ],
+  "Chile": [
+   "Argentina",
+   "Bolivia",
+   "Peru"
+  ],
+  "Bulgaria": [
+   "Macedonia",
+   "Romania",
+   "Serbia",
+   "Türkiye"
+  ],
+  "Belarus": [
+   "Lithuania",
+   "Poland",
+   "Russia",
+   "Ukraine"
+  ],
+  "Thailand": [
+   "Myanmar"
+  ],
+  "Bosnia & Herzegovina": [
+   "Croatia",
+   "Serbia"
+  ],
+  "Jordan": [
+   "Iraq",
+   "Israel",
+   "Palestine"
+  ],
+  "Serbia": [
+   "Albania",
+   "Bosnia & Herzegovina",
+   "Bulgaria",
+   "Croatia",
+   "Hungary",
+   "Macedonia",
+   "Romania"
+  ],
+  "Colombia": [
+   "Brazil",
+   "Ecuador",
+   "Panama",
+   "Peru",
+   "Venezuela"
+  ],
+  "Netherlands": [
+   "Belgium",
+   "Germany"
+  ],
+  "Austria": [
+   "Czechia",
+   "Germany",
+   "Hungary",
+   "Italy",
+   "Slovakia",
+   "Switzerland"
+  ],
+  "Cameroon": [
+   "Nigeria"
+  ],
+  "Italy": [
+   "Austria",
+   "France",
+   "Switzerland"
+  ],
+  "Haiti": [
+   "Dominican Republic"
+  ],
+  "USA": [
+   "Canada",
+   "Cuba",
+   "Mexico"
+  ],
+  "Poland": [
+   "Belarus",
+   "Czechia",
+   "Germany",
+   "Lithuania",
+   "Russia",
+   "Slovakia",
+   "Ukraine"
+  ],
+  "Azerbaijan": [
+   "Armenia",
+   "Georgia",
+   "Iran",
+   "Russia",
+   "Türkiye"
+  ],
+  "Türkiye": [
+   "Armenia",
+   "Azerbaijan",
+   "Bulgaria",
+   "Georgia",
+   "Iran",
+   "Iraq"
+  ],
+  "Lithuania": [
+   "Belarus",
+   "Poland",
+   "Russia"
+  ],
+  "Denmark": [
+   "Germany"
+  ],
+  "Albania": [
+   "Macedonia",
+   "Serbia"
+  ],
+  "Panama": [
+   "Colombia"
+  ],
+  "India": [
+   "China",
+   "Myanmar"
+  ],
+  "Hungary": [
+   "Austria",
+   "Croatia",
+   "Romania",
+   "Serbia",
+   "Slovakia",
+   "Ukraine"
+  ],
+  "Vietnam": [
+   "China"
+  ],
+  "Lebanon": [
+   "Israel"
+  ],
+  "Czechia": [
+   "Austria",
+   "Germany",
+   "Poland",
+   "Slovakia"
+  ],
+  "Spain": [
+   "France",
+   "Morocco",
+   "Portugal"
+  ],
+  "Uzbekistan": [
+   "Afghanistan",
+   "Kazakhstan",
+   "Kyrgyzstan",
+   "Tajikistan"
+  ],
+  "Palestine": [
+   "Egypt",
+   "Israel",
+   "Jordan"
+  ],
+  "Afghanistan": [
+   "China",
+   "Iran",
+   "Tajikistan",
+   "Uzbekistan"
+  ],
+  "Iran": [
+   "Afghanistan",
+   "Armenia",
+   "Azerbaijan",
+   "Iraq",
+   "Türkiye"
+  ],
+  "Egypt": [
+   "Israel",
+   "Palestine"
+  ],
+  "Israel": [
+   "Egypt",
+   "Jordan",
+   "Lebanon",
+   "Palestine"
+  ],
+  "Wales": [
+   "England",
+   "Ireland",
+   "Scotland"
+  ],
+  "Argentina": [
+   "Bolivia",
+   "Brazil",
+   "Chile",
+   "Paraguay"
+  ],
+  "Uganda": [
+   "Democratic Republic of Congo"
+  ],
+  "Myanmar": [
+   "China",
+   "India",
+   "Thailand"
+  ],
+  "Macedonia": [
+   "Albania",
+   "Bulgaria",
+   "Serbia"
+  ],
+  "Sweden": [
+   "Finland",
+   "Norway"
+  ],
+  "Hong Kong": [
+   "China"
+  ],
+  "Kyrgyzstan": [
+   "China",
+   "Kazakhstan",
+   "Tajikistan",
+   "Uzbekistan"
+  ],
+  "Canada": [
+   "USA"
+  ],
+  "Croatia": [
+   "Bosnia & Herzegovina",
+   "Hungary",
+   "Serbia"
+  ],
+  "Peru": [
+   "Bolivia",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Ecuador"
+  ],
+  "Ukraine": [
+   "Belarus",
+   "Hungary",
+   "Moldova",
+   "Poland",
+   "Romania",
+   "Russia",
+   "Slovakia"
+  ],
+  "Niger": [
+   "Nigeria"
+  ],
+  "Russia": [
+   "Azerbaijan",
+   "Belarus",
+   "China",
+   "Finland",
+   "Georgia",
+   "Kazakhstan",
+   "Lithuania",
+   "Mongolia",
+   "Norway",
+   "Poland",
+   "Ukraine"
+  ],
+  "Tajikistan": [
+   "Afghanistan",
+   "China",
+   "Kyrgyzstan",
+   "Uzbekistan"
+  ],
+  "Moldova": [
+   "Romania",
+   "Ukraine"
+  ],
+  "Kazakhstan": [
+   "China",
+   "Kyrgyzstan",
+   "Russia",
+   "Uzbekistan"
+  ],
+  "Belgium": [
+   "France",
+   "Germany",
+   "Luxembourg",
+   "Netherlands"
+  ],
+  "Morocco": [
+   "Spain"
+  ],
+  "Venezuela": [
+   "Brazil",
+   "Colombia",
+   "Guyana"
+  ],
+  "Portugal": [
+   "Spain"
+  ],
+  "China": [
+   "Afghanistan",
+   "Hong Kong",
+   "India",
+   "Kazakhstan",
+   "Kyrgyzstan",
+   "Mongolia",
+   "Myanmar",
+   "Russia",
+   "Tajikistan",
+   "Vietnam"
+  ],
+  "Ireland": [
+   "England",
+   "Scotland",
+   "Wales"
+  ],
+  "Finland": [
+   "Norway",
+   "Russia",
+   "Sweden"
+  ],
+  "Germany": [
+   "Austria",
+   "Belgium",
+   "Czechia",
+   "Denmark",
+   "France",
+   "Luxembourg",
+   "Netherlands",
+   "Poland",
+   "Switzerland"
+  ],
+  "Guyana": [
+   "Brazil",
+   "Suriname",
+   "Venezuela"
+  ],
+  "Democratic Republic of Congo": [
+   "Uganda"
+  ],
+  "Paraguay": [
+   "Argentina",
+   "Bolivia",
+   "Brazil"
+  ],
+  "Norway": [
+   "Finland",
+   "Russia",
+   "Sweden"
+  ],
+  "Luxembourg": [
+   "Belgium",
+   "France",
+   "Germany"
+  ],
+  "Nigeria": [
+   "Cameroon",
+   "Niger"
+  ],
+  "Romania": [
+   "Bulgaria",
+   "Hungary",
+   "Moldova",
+   "Serbia",
+   "Ukraine"
+  ],
+  "Suriname": [
+   "Brazil",
+   "Guyana"
+  ],
+  "Switzerland": [
+   "Austria",
+   "France",
+   "Germany",
+   "Italy"
+  ],
+  "France": [
+   "Belgium",
+   "Germany",
+   "Italy",
+   "Luxembourg",
+   "Spain",
+   "Switzerland"
+  ],
+  "Zimbabwe": [
+   "South Africa"
+  ],
+  "Slovakia": [
+   "Austria",
+   "Czechia",
+   "Hungary",
+   "Poland",
+   "Ukraine"
+  ],
+  "England": [
+   "Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "Cuba": [
+   "USA"
+  ],
+  "Mexico": [
+   "USA"
+  ],
+  "Bolivia": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Paraguay",
+   "Peru"
+  ],
+  "Mongolia": [
+   "China",
+   "Russia"
+  ],
+  "Armenia": [
+   "Azerbaijan",
+   "Georgia",
+   "Iran",
+   "Türkiye"
+  ]
+ }
 }

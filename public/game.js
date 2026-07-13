@@ -36,13 +36,13 @@ const CONTINENT = {
   "Azerbaijan":"EU","Albania":"EU","Austria":"EU","Belarus":"EU","Belgium":"EU",
   "Bosnia & Herzegovina":"EU","Cyprus":"EU","Denmark":"EU","Iceland":"EU","Lithuania":"EU",
   "Luxembourg":"EU","Macedonia":"EU","Portugal":"EU","Romania":"EU","Slovakia":"EU",
-  "Türkiye":"EU",
+  "Türkiye":"EU","Bulgaria":"EU","Hungary":"EU","Finland":"EU",
   // Asia
   "China":"AS","Japan":"AS","South Korea":"AS","Korea":"AS","Kazakhstan":"AS",
   "Philippines":"AS","Thailand":"AS","India":"AS","Mongolia":"AS","Kyrgyzstan":"AS",
   "Uzbekistan":"AS","Tajikistan":"AS","Afghanistan":"AS","Bahrain":"AS","Hong Kong":"AS",
   "Indonesia":"AS","Iraq":"AS","Israel":"AS","Lebanon":"AS","Myanmar":"AS","Palestine":"AS",
-  "United Arab Emirates":"AS","Vietnam":"AS",
+  "United Arab Emirates":"AS","Vietnam":"AS","Iran":"AS","Jordan":"AS","Singapore":"AS",
   // Oceania
   "Australia":"OC","New Zealand":"OC","Tonga":"OC","Samoa":"OC",
   // Africa
@@ -56,6 +56,7 @@ function continent(nat){ return CONTINENT[nat] || null; }
 const NUM_CLOSE = { wins:2, losses:2, age:2, height:2, debut:2 };
 
 let DATA = [];
+let BORDERS = {};   // nationality -> [bordering nationalities] (from fighters.json)
 let target = null;
 let guessed = new Set();
 let guessCount = 0;
@@ -93,6 +94,7 @@ async function load(){
   const res = await fetch("fighters.json");
   const json = await res.json();
   DATA = json.fighters.filter(f => f.heightIn && f.debutYear);
+  BORDERS = json.borders || {};
   newGame();
 }
 
@@ -208,6 +210,7 @@ function startTimer(){
 function cell(display, status, arrow){
   const arr = arrow ? `<span class="arrow">${arrow}</span>` : "";
   if (status === "exact") return `<div class="cell"><span class="chip green">${display} ✓</span></div>`;
+  if (status === "border") return `<div class="cell"><span class="chip orange">${display}</span></div>`;
   if (status === "close") return `<div class="cell"><span class="chip yellow">${display} ${arr||"≈"}</span></div>`;
   return `<div class="cell">${display} ${arr}</div>`;
 }
@@ -233,9 +236,10 @@ function renderGuess(f){
     if (Math.abs(ti - gi) === 1) divStatus = "close";
   }
 
-  // Nationality
+  // Nationality: exact country > shares a border (orange) > same continent (yellow).
   let natStatus = "none";
   if (f.nationality === target.nationality) natStatus = "exact";
+  else if ((BORDERS[target.nationality] || []).includes(f.nationality)) natStatus = "border";
   else if (continent(f.nationality) && continent(f.nationality) === continent(target.nationality)) natStatus = "close";
 
   // Numerics

@@ -6,6 +6,7 @@
   --green:#3bd93b;
   --green-d:#2bb52b;
   --yellow:#ffd23a;
+  --orange:#ff8c1a;     /* nationality that borders the target country */
   --gold:#d9b45a;
   --white:#ffffff;
   --gray:#9a94a6;
@@ -142,6 +143,7 @@ body{
 }
 .chip.green{background:var(--green);}
 .chip.yellow{background:var(--yellow);}
+.chip.orange{background:var(--orange);}   /* nationality borders the target */
 .arrow{font-weight:bold;}
 
 /* ---------- Reveal ---------- */

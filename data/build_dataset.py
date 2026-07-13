@@ -385,12 +385,21 @@ def build(limit=None, refresh=False):
             by_name[k] = f
     fighters = sorted(by_name.values(), key=lambda x: x["name"])
 
+    # Nationality-border adjacency (for the orange "borders the target" color),
+    # sourced from GeoNames and restricted to nationalities actually present.
+    try:
+        from borders import build_borders
+        borders = build_borders({f["nationality"] for f in fighters}, refresh=refresh)
+    except Exception as e:  # never let border data break the core build
+        print(f"[borders] skipped ({e})", file=sys.stderr)
+        borders = {}
+
     meta = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "count": len(fighters),
         "source": "ESPN public MMA API",
     }
-    out = {"meta": meta, "fighters": fighters}
+    out = {"meta": meta, "fighters": fighters, "borders": borders}
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, "w") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
@@ -402,7 +411,8 @@ def build(limit=None, refresh=False):
     print(f"[done] {len(fighters)} fighters -> {OUT_PATH} "
           f"(Hard pool {len(fighters)} [2010+], Normal pool {normal_pool} [2023+]; "
           f"{champs} champions, {ranked} top-10 ranked, "
-          f"{tbouts} title bouts, {afights} total UFC fights)", file=sys.stderr)
+          f"{tbouts} title bouts, {afights} total UFC fights, "
+          f"{len(borders)} nationalities with borders)", file=sys.stderr)
 
 
 if __name__ == "__main__":
