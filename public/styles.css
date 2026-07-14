@@ -315,6 +315,27 @@ body{
 .ma-sub{color:var(--gray);}
 #m-next{align-self:flex-start;}
 
+/* ---------- Play-style modal + Daily panel ---------- */
+.play-option{
+  text-align:left;font-family:inherit;cursor:pointer;
+  background:var(--white);border:4px solid var(--ink);border-radius:10px;
+  box-shadow:4px 5px 0 var(--ink);padding:14px 16px;
+}
+.play-option:active{transform:translate(2px,2px);box-shadow:2px 3px 0 var(--ink);}
+.play-option.selected{background:var(--green);}
+.daily-panel{display:flex;justify-content:center;margin-bottom:28px;}
+.daily-card{
+  background:var(--cream);border:4px solid var(--ink);border-radius:12px;
+  box-shadow:6px 8px 0 var(--ink);padding:22px 26px;
+  width:min(560px,94vw);display:flex;flex-direction:column;gap:12px;
+  align-items:center;text-align:center;
+}
+.daily-card hr{border:none;border-top:3px dashed var(--ink);width:100%;margin:2px 0;}
+.daily-sub{color:var(--ink);font-size:16px;}
+.daily-meta{display:flex;gap:32px;}
+.daily-meta .k{color:var(--gray);font-size:12px;text-transform:uppercase;letter-spacing:.5px;}
+.daily-meta .v{font-size:28px;font-weight:700;}
+
 .hidden{display:none !important;}
 
 @media(max-width:820px){

@@ -70,6 +70,83 @@ let timerInterval = null;
 let mode = localStorage.getItem("octagonle_mode") || "classic-normal";
 if (mode === "classic") mode = "classic-normal";   // migrate old saved value
 
+// Play style: "infinity" (endless, all modes) | "daily" (one shared seeded puzzle
+// per UTC day, one-and-done). Daily offers only Classic-Normal and Moments.
+let playStyle = localStorage.getItem("octagonle_playstyle") || "infinity";
+let countdownInterval = null;
+let DAILY_DATE_OVERRIDE = null;   // test hook; null => real UTC date
+
+// --- Deterministic daily seeding ---
+function dailyKey(){ return DAILY_DATE_OVERRIDE || new Date().toISOString().slice(0, 10); }
+function hashStr(s){
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < s.length; i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return h >>> 0;
+}
+function mulberry32(a){
+  return function(){
+    a |= 0; a = a + 0x6D2B79F5 | 0;
+    let t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+function seededRng(s){ return mulberry32(hashStr(s)); }
+
+// --- Daily state (localStorage) ---
+function dailyRecordKey(kind){ return `octagonle_daily_${kind}_${dailyKey()}`; }
+function getDailyRecord(kind){ try { return JSON.parse(localStorage.getItem(dailyRecordKey(kind)) || "null"); } catch { return null; } }
+function setDailyRecord(kind, rec){ localStorage.setItem(dailyRecordKey(kind), JSON.stringify(rec)); }
+function prevDay(key){ const d = new Date(key + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() - 1); return d.toISOString().slice(0, 10); }
+// One day-streak shared by both dailies; updated once per day on first completion.
+function updateDailyStreak(counts){
+  const today = dailyKey();
+  if (localStorage.getItem("octagonle_daily_counted") === today) return;
+  let streak = parseInt(localStorage.getItem("octagonle_daily_streak") || "0", 10);
+  if (counts){
+    streak = (localStorage.getItem("octagonle_daily_lastwin") === prevDay(today)) ? streak + 1 : 1;
+    localStorage.setItem("octagonle_daily_lastwin", today);
+  } else {
+    streak = 0;
+  }
+  localStorage.setItem("octagonle_daily_streak", String(streak));
+  localStorage.setItem("octagonle_daily_counted", today);
+}
+
+// --- Countdown to next UTC midnight ---
+function startCountdown(){
+  clearInterval(countdownInterval);
+  const tick = () => {
+    const now = new Date();
+    const next = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1, 0, 0, 0);
+    let ms = Math.max(0, next - now.getTime());
+    const h = Math.floor(ms / 3.6e6), m = Math.floor(ms % 3.6e6 / 6e4), s = Math.floor(ms % 6e4 / 1e3);
+    const pad = n => String(n).padStart(2, "0");
+    el("daily-countdown").textContent = `${pad(h)}:${pad(m)}:${pad(s)}`;
+  };
+  tick();
+  countdownInterval = setInterval(tick, 1000);
+}
+
+// Shows the locked "come back tomorrow" panel for whichever daily is active.
+function showDailyLocked(){
+  const kind = (mode === "moments") ? "moments" : "classic";
+  const rec = getDailyRecord(kind) || {};
+  const streak = parseInt(localStorage.getItem("octagonle_daily_streak") || "0", 10);
+  if (kind === "moments"){
+    el("daily-result-title").textContent = "Daily Moments complete";
+    el("daily-result-sub").textContent = `You scored ${rec.score} / ${rec.max} today.`;
+  } else {
+    el("daily-result-title").textContent = rec.won ? "Daily solved! 🎉" : "Daily complete";
+    el("daily-result-sub").textContent = rec.won
+      ? `Solved in ${rec.guesses} guess${rec.guesses === 1 ? "" : "es"}.`
+      : `Out of guesses — it was ${rec.answer}.`;
+  }
+  el("daily-streak").textContent = String(streak);
+  el("daily-panel").classList.remove("hidden");
+  startCountdown();
+}
+
 // Classic era pools, by a fighter's most recent UFC bout year.
 const NORMAL_SINCE = new Date().getFullYear() - 3;  // "last 3 years"
 const HARD_SINCE = 2010;
@@ -157,10 +234,10 @@ function fighterWeight(f){
   return w;
 }
 
-function pickTarget(){
+function pickTarget(rng = Math.random){
   const pool = DATA.filter(inClassicPool);           // era-restricted (Normal/Hard)
   const total = pool.reduce((s, f) => s + fighterWeight(f), 0);
-  let r = Math.random() * total;
+  let r = rng() * total;
   for (const f of pool){
     r -= fighterWeight(f);
     if (r <= 0) return f;
@@ -182,6 +259,12 @@ function newGame(){
   guessCount = 0;
   solved = false;
   el("reveal").classList.add("hidden");
+  el("play-again-btn").classList.remove("hidden");
+  el("daily-panel").classList.add("hidden");
+  clearInterval(countdownInterval);
+
+  // Daily is limited to Classic-Normal + Moments.
+  if (playStyle === "daily" && mode !== "moments") mode = "classic-normal";
 
   // Defining Moments is a self-contained trivia mode (own view + module).
   const momentsMode = mode === "moments";
@@ -197,6 +280,20 @@ function newGame(){
   }
   el("moments-view").classList.add("hidden");
 
+  // Daily Classic: if today's puzzle is already done, show the locked panel.
+  if (playStyle === "daily"){
+    const rec = getDailyRecord("classic");
+    if (rec && rec.done){
+      el("classic-view").classList.add("hidden");
+      el("title-view").classList.add("hidden");
+      document.querySelector(".guess-box").classList.add("hidden");
+      el("timer").classList.add("hidden");
+      clearInterval(timerInterval);
+      showDailyLocked();
+      return;
+    }
+  }
+
   el("guess-input").value = "";
   el("guess-input").disabled = false;
   updateAutocomplete();   // restrict guesses to the current mode's pool
@@ -209,7 +306,9 @@ function newGame(){
   } else {
     el("title-view").classList.add("hidden");
     el("classic-view").classList.remove("hidden");
-    target = pickTarget();
+    target = playStyle === "daily"
+      ? pickTarget(seededRng(dailyKey() + "|classic"))
+      : pickTarget();
     el("rows").innerHTML = "";
     updateAttempts();
   }
@@ -363,6 +462,15 @@ function submitGuess(name){
   else if (guessCount >= maxAttempts()) lose();
 }
 
+// Daily Classic finish: record the result, update the day-streak, lock the day.
+function finishDailyClassic(won){
+  setDailyRecord("classic", { done: true, won, guesses: guessCount, answer: target.name });
+  updateDailyStreak(won);
+  document.querySelector(".guess-box").classList.add("hidden");
+  el("timer").classList.add("hidden");
+  showDailyLocked();
+}
+
 function lose(){
   solved = true;
   clearInterval(timerInterval);
@@ -372,16 +480,19 @@ function lose(){
     renderGuess(target);
     el("title-grid").classList.remove("hidden");
   }
+  if (playStyle === "daily"){ finishDailyClassic(false); return; }
+  localStorage.setItem("octagonle_streak", "0");
   showReveal(false);
 }
 
 function win(){
-  // Streak (session-persistent via localStorage)
-  let streak = parseInt(localStorage.getItem("octagonle_streak") || "0", 10) + 1;
-  localStorage.setItem("octagonle_streak", String(streak));
   solved = true;
   clearInterval(timerInterval);
   el("guess-input").disabled = true;
+  if (playStyle === "daily"){ finishDailyClassic(true); return; }
+  // Streak (session-persistent via localStorage)
+  const streak = parseInt(localStorage.getItem("octagonle_streak") || "0", 10) + 1;
+  localStorage.setItem("octagonle_streak", String(streak));
   showReveal(true, streak);
 }
 
@@ -393,7 +504,6 @@ function showReveal(won, streak){
     ? `${guessCount} guess${guessCount===1?"":"es"}`
     : `The answer was ${target.name}`;
   el("result-streak").textContent = won ? String(streak) : "0";
-  if (!won) localStorage.setItem("octagonle_streak", "0");
 
   if (isTitleMode()){
     renderTitleReveal();
@@ -494,4 +604,48 @@ document.querySelectorAll(".mode-option").forEach(btn => {
   });
 });
 
+// ---------- Play-style (Infinity / Daily) ----------
+function applyPlayStyle(){
+  const daily = playStyle === "daily";
+  el("play-label").textContent = daily ? "Daily" : "Infinity";
+  document.querySelector("#play-btn .ico").textContent = daily ? "📅" : "♾️";
+  // Daily only offers the data-daily modes (Classic-Normal + Moments).
+  document.querySelectorAll(".mode-option").forEach(b =>
+    b.classList.toggle("hidden", daily && b.dataset.daily === undefined));
+  if (daily && mode !== "moments") mode = "classic-normal";
+}
+function markSelectedPlay(){
+  document.querySelectorAll(".play-option").forEach(b =>
+    b.classList.toggle("selected", b.dataset.style === playStyle));
+}
+el("play-btn").addEventListener("click", () => {
+  markSelectedPlay();
+  el("play-modal").classList.remove("hidden");
+});
+el("play-close").addEventListener("click", () => el("play-modal").classList.add("hidden"));
+el("play-modal").addEventListener("click", (e) => {
+  if (e.target.id === "play-modal") el("play-modal").classList.add("hidden");
+});
+document.querySelectorAll(".play-option").forEach(btn => {
+  btn.addEventListener("click", () => {
+    playStyle = btn.dataset.style;
+    localStorage.setItem("octagonle_playstyle", playStyle);
+    el("play-modal").classList.add("hidden");
+    applyPlayStyle();
+    newGame();
+  });
+});
+el("daily-share").addEventListener("click", () => {
+  const kind = (mode === "moments") ? "moments" : "classic";
+  const rec = getDailyRecord(kind) || {};
+  const streak = localStorage.getItem("octagonle_daily_streak") || "0";
+  const line = kind === "moments"
+    ? `Octagonle Daily Moments — ${rec.score}/${rec.max} · streak ${streak} 🥊`
+    : `Octagonle Daily (${dailyKey()}) — ${rec.won ? rec.guesses + " guesses" : "X"} · streak ${streak} 🥊`;
+  if (navigator.clipboard) navigator.clipboard.writeText(line);
+  el("daily-share").textContent = "Copied!";
+  setTimeout(() => el("daily-share").textContent = "↗ Share", 1500);
+});
+
+applyPlayStyle();
 load();

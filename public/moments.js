@@ -15,6 +15,19 @@ let mScore = 0;
 let mPlayed = 0;
 let mBest = parseInt(localStorage.getItem("octagonle_moments_best") || "0", 10);
 
+// Daily Moments: a fixed seeded set played once per UTC day.
+const DAILY_MOMENTS_N = 5;
+let mDaily = false, mDailySet = [], mDailyIdx = 0;
+function seededMoments(n){
+  const rng = seededRng(dailyKey() + "|moments");  // helpers from game.js
+  const arr = MOMENTS.slice();
+  for (let i = arr.length - 1; i > 0; i--){
+    const j = Math.floor(rng() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr.slice(0, n);
+}
+
 function mNorm(s){
   return (s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "")
     .toLowerCase().replace(/[^a-z0-9 ]/g, "").trim().replace(/\s+/g, " ");
@@ -25,8 +38,22 @@ async function startMoments(){
   buildMomentsAutocomplete();
   mScore = 0;
   mPlayed = 0;
+  mDaily = (typeof playStyle !== "undefined" && playStyle === "daily");
+  if (mDaily){
+    const rec = getDailyRecord("moments");
+    if (rec && rec.done){ el("moments-view").classList.add("hidden"); showDailyLocked(); return; }
+    mDailySet = seededMoments(DAILY_MOMENTS_N);
+    mDailyIdx = 0;
+  }
   updateMomentsScore();
   nextMoment();
+}
+
+function finishDailyMoments(){
+  setDailyRecord("moments", { done: true, score: mScore, max: DAILY_MOMENTS_N * 4 });
+  updateDailyStreak(true);
+  el("moments-view").classList.add("hidden");
+  showDailyLocked();       // defined in game.js
 }
 
 // Suggest any roster fighter plus every fighter named in a moment.
@@ -39,14 +66,20 @@ function buildMomentsAutocomplete(){
 }
 
 function updateMomentsScore(){
-  el("m-score").textContent =
-    `Score: ${mScore}  ·  Best: ${mBest}  ·  Moments: ${mPlayed}`;
+  el("m-score").textContent = mDaily
+    ? `Daily · Moment ${Math.min(mDailyIdx || 1, DAILY_MOMENTS_N)} / ${DAILY_MOMENTS_N}  ·  Score: ${mScore}`
+    : `Score: ${mScore}  ·  Best: ${mBest}  ·  Moments: ${mPlayed}`;
 }
 
 function nextMoment(){
   let m;
-  do { m = MOMENTS[Math.floor(Math.random() * MOMENTS.length)]; }
-  while (MOMENTS.length > 1 && m === mCurrent);
+  if (mDaily){
+    if (mDailyIdx >= mDailySet.length){ finishDailyMoments(); return; }
+    m = mDailySet[mDailyIdx++];
+  } else {
+    do { m = MOMENTS[Math.floor(Math.random() * MOMENTS.length)]; }
+    while (MOMENTS.length > 1 && m === mCurrent);
+  }
   mCurrent = m;
 
   const tags = [];
@@ -58,6 +91,7 @@ function nextMoment(){
   for (const id of ["m-event", "m-f1", "m-f2", "m-year"]) el(id).value = "";
   el("m-reveal").classList.add("hidden");
   el("m-submit").disabled = false;
+  updateMomentsScore();
   el("m-event").focus();
 }
 
