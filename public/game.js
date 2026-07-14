@@ -181,6 +181,21 @@ function newGame(){
   guessCount = 0;
   solved = false;
   el("reveal").classList.add("hidden");
+
+  // Defining Moments is a self-contained trivia mode (own view + module).
+  const momentsMode = mode === "moments";
+  document.querySelector(".guess-box").classList.toggle("hidden", momentsMode);
+  el("timer").classList.toggle("hidden", momentsMode);
+  if (momentsMode){
+    el("classic-view").classList.add("hidden");
+    el("title-view").classList.add("hidden");
+    el("moments-view").classList.remove("hidden");
+    clearInterval(timerInterval);
+    startMoments();       // defined in moments.js
+    return;
+  }
+  el("moments-view").classList.add("hidden");
+
   el("guess-input").value = "";
   el("guess-input").disabled = false;
   updateAutocomplete();   // restrict guesses to the current mode's pool

@@ -1,0 +1,925 @@
+{
+ "meta": {
+  "count": 100,
+  "source": "curated; verified vs Wikipedia List of UFC events"
+ },
+ "moments": [
+  {
+   "eventNumber": 1,
+   "year": 1993,
+   "fighter1": "Royce Gracie",
+   "fighter2": "Gerard Gordeau",
+   "weightClass": "Open Weight",
+   "venue": "Denver, Colorado",
+   "clue": "A slim gi-clad jiu-jitsu practitioner chokes out a savate stylist to win the very first eight-man tournament."
+  },
+  {
+   "eventNumber": 52,
+   "year": 2005,
+   "fighter1": "Chuck Liddell",
+   "fighter2": "Randy Couture",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "'The Iceman' avenges a loss with a first-round knockout to take the belt from his greatest rival."
+  },
+  {
+   "eventNumber": 57,
+   "year": 2006,
+   "fighter1": "Chuck Liddell",
+   "fighter2": "Randy Couture",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A legendary wrestler retires (for now) after a third knockout loss closes out a defining trilogy."
+  },
+  {
+   "eventNumber": 60,
+   "year": 2006,
+   "fighter1": "Matt Hughes",
+   "fighter2": "Royce Gracie",
+   "weightClass": "Welterweight",
+   "clue": "A dominant welterweight champ manhandles the sport's original icon in a passing-of-the-torch beating."
+  },
+  {
+   "eventNumber": 63,
+   "year": 2006,
+   "fighter1": "Matt Hughes",
+   "fighter2": "B.J. Penn",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A Hawaiian is dominating until his ribs give out, and the champ rallies for a comeback stoppage."
+  },
+  {
+   "eventNumber": 66,
+   "year": 2006,
+   "fighter1": "Chuck Liddell",
+   "fighter2": "Tito Ortiz",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A rivalry that helped mainstream the sport ends with the champ stopping his former friend again."
+  },
+  {
+   "eventNumber": 71,
+   "year": 2007,
+   "fighter1": "Quinton Jackson",
+   "fighter2": "Chuck Liddell",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "One overhand right ends the reign of a beloved champion and avenges a past loss."
+  },
+  {
+   "eventNumber": 83,
+   "year": 2008,
+   "fighter1": "Georges St-Pierre",
+   "fighter2": "Matt Serra",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "Montreal, Quebec",
+   "clue": "Before a roaring hometown crowd, a champion avenges the biggest upset of his career with brutal knees."
+  },
+  {
+   "eventNumber": 90,
+   "year": 2008,
+   "fighter1": "Anderson Silva",
+   "fighter2": "Patrick Côté",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A title defense ends anticlimactically when the challenger's knee buckles on its own in the third."
+  },
+  {
+   "eventNumber": 91,
+   "year": 2008,
+   "fighter1": "Randy Couture",
+   "fighter2": "Brock Lesnar",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A massive former pro-wrestler takes the heavyweight crown in only his fourth pro fight."
+  },
+  {
+   "eventNumber": 94,
+   "year": 2009,
+   "fighter1": "Georges St-Pierre",
+   "fighter2": "B.J. Penn",
+   "weightClass": "Welterweight",
+   "clue": "A superfight between two champions ends in a lopsided beating and a lingering 'greasing' controversy."
+  },
+  {
+   "eventNumber": 100,
+   "year": 2009,
+   "fighter1": "Brock Lesnar",
+   "fighter2": "Frank Mir",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "On a milestone card, a mountainous champion unifies the belt and taunts the booing crowd."
+  },
+  {
+   "eventNumber": 104,
+   "year": 2009,
+   "fighter1": "Lyoto Machida",
+   "fighter2": "Mauricio Rua",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A karate champion keeps his belt on a hugely disputed decision that most fans thought he lost."
+  },
+  {
+   "eventNumber": 111,
+   "year": 2010,
+   "fighter1": "Georges St-Pierre",
+   "fighter2": "Dan Hardy",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A challenger survives two fight-ending submission attempts but loses every round on the cards."
+  },
+  {
+   "eventNumber": 116,
+   "year": 2010,
+   "fighter1": "Brock Lesnar",
+   "fighter2": "Shane Carwin",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "The champion weathers a brutal first-round beating, then submits a challenger who gasses out."
+  },
+  {
+   "eventNumber": 117,
+   "year": 2010,
+   "fighter1": "Anderson Silva",
+   "fighter2": "Chael Sonnen",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "Losing four-plus rounds to a trash-talking wrestler, the champ pulls off a triangle-armbar with two minutes left."
+  },
+  {
+   "eventNumber": 121,
+   "year": 2010,
+   "fighter1": "Cain Velasquez",
+   "fighter2": "Brock Lesnar",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A relentless wrestler-boxer batters the champ to become the first Mexican-American heavyweight king."
+  },
+  {
+   "eventNumber": 124,
+   "year": 2010,
+   "fighter1": "Georges St-Pierre",
+   "fighter2": "Josh Koscheck",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "Montreal, Quebec",
+   "clue": "A jab shuts one eye of a coaching rival across a one-sided five-round title defense."
+  },
+  {
+   "eventNumber": 128,
+   "year": 2011,
+   "fighter1": "Mauricio Rua",
+   "fighter2": "Jon Jones",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "At 23, a phenom dismantles the champion to become the youngest titleholder in company history."
+  },
+  {
+   "eventNumber": 129,
+   "year": 2011,
+   "fighter1": "Georges St-Pierre",
+   "fighter2": "Jake Shields",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "Toronto, Ontario",
+   "clue": "A record indoor crowd watches a champion grind out a decision while nursing a badly damaged eye."
+  },
+  {
+   "eventNumber": 135,
+   "year": 2011,
+   "fighter1": "Jon Jones",
+   "fighter2": "Quinton Jackson",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A young champion submits a former titleholder late to keep rolling through the division."
+  },
+  {
+   "eventNumber": 136,
+   "year": 2011,
+   "fighter1": "Frankie Edgar",
+   "fighter2": "Gray Maynard",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "After nearly being finished twice across their trilogy, the champion lands a fourth-round knockout to settle it."
+  },
+  {
+   "eventNumber": 139,
+   "year": 2011,
+   "fighter1": "Mauricio Rua",
+   "fighter2": "Dan Henderson",
+   "weightClass": "Light Heavyweight",
+   "clue": "A five-round slugfest widely hailed as one of the greatest fights ever ends on a razor-close decision."
+  },
+  {
+   "eventNumber": 141,
+   "year": 2011,
+   "fighter1": "Brock Lesnar",
+   "fighter2": "Alistair Overeem",
+   "weightClass": "Heavyweight",
+   "clue": "Liver kicks end a former champion's run, and he retires in the cage afterward."
+  },
+  {
+   "eventNumber": 142,
+   "year": 2012,
+   "fighter1": "José Aldo",
+   "fighter2": "Chad Mendes",
+   "weightClass": "Featherweight",
+   "title": true,
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A hometown champion knees out a wrestler at the horn, then leaps into the crowd to celebrate."
+  },
+  {
+   "eventNumber": 143,
+   "year": 2012,
+   "fighter1": "Nick Diaz",
+   "fighter2": "Carlos Condit",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A point-fighting game plan wins an interim belt over a pressure-fighting Stockton rival, sparking outrage."
+  },
+  {
+   "eventNumber": 144,
+   "year": 2012,
+   "fighter1": "Frankie Edgar",
+   "fighter2": "Benson Henderson",
+   "weightClass": "Lightweight",
+   "title": true,
+   "venue": "Saitama, Japan",
+   "clue": "A close decision on the promotion's return to Japan hands over the lightweight belt."
+  },
+  {
+   "eventNumber": 145,
+   "year": 2012,
+   "fighter1": "Jon Jones",
+   "fighter2": "Rashad Evans",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A grudge match between former training partners goes the champion's way over five rounds."
+  },
+  {
+   "eventNumber": 148,
+   "year": 2012,
+   "fighter1": "Anderson Silva",
+   "fighter2": "Chael Sonnen",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "The most-hyped grudge rematch of its era ends with a knee to the chest in the second round."
+  },
+  {
+   "eventNumber": 154,
+   "year": 2012,
+   "fighter1": "Georges St-Pierre",
+   "fighter2": "Carlos Condit",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "Montreal, Quebec",
+   "clue": "Returning from a torn knee, a champion survives a near-finish head kick to reclaim his unified belt."
+  },
+  {
+   "eventNumber": 155,
+   "year": 2012,
+   "fighter1": "Junior dos Santos",
+   "fighter2": "Cain Velasquez",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A challenger reclaims the heavyweight belt with a five-round mauling that reverses an earlier knockout loss."
+  },
+  {
+   "eventNumber": 157,
+   "year": 2013,
+   "fighter1": "Ronda Rousey",
+   "fighter2": "Liz Carmouche",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "venue": "Anaheim, California",
+   "clue": "The promotion's first women's bout ends the way almost all of hers did — a first-round armbar."
+  },
+  {
+   "eventNumber": 158,
+   "year": 2013,
+   "fighter1": "Georges St-Pierre",
+   "fighter2": "Nick Diaz",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "Montreal, Quebec",
+   "clue": "A champion out-wrestles a trash-talking Stockton rival across five rounds in a heated grudge match."
+  },
+  {
+   "eventNumber": 162,
+   "year": 2013,
+   "fighter1": "Chris Weidman",
+   "fighter2": "Anderson Silva",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "The longest-reigning champ ever clowns one time too many and gets flattened, ending a seven-year reign."
+  },
+  {
+   "eventNumber": 165,
+   "year": 2013,
+   "fighter1": "Jon Jones",
+   "fighter2": "Alexander Gustafsson",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "venue": "Toronto, Ontario",
+   "clue": "A dominant champion is pushed to the absolute limit for the first time, edging a five-round war."
+  },
+  {
+   "eventNumber": 166,
+   "year": 2013,
+   "fighter1": "Cain Velasquez",
+   "fighter2": "Junior dos Santos",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "The rubber match of a heavyweight trilogy ends in a decisive fifth-round stoppage for the champion."
+  },
+  {
+   "eventNumber": 168,
+   "year": 2013,
+   "fighter1": "Chris Weidman",
+   "fighter2": "Anderson Silva",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A checked leg kick snaps the former champion's shin in a gruesome rematch finish."
+  },
+  {
+   "eventNumber": 171,
+   "year": 2014,
+   "fighter1": "Johny Hendricks",
+   "fighter2": "Robbie Lawler",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "Two heavy hitters slug out five rounds for a vacant welterweight belt after the long-time champ walked away."
+  },
+  {
+   "eventNumber": 172,
+   "year": 2014,
+   "fighter1": "Jon Jones",
+   "fighter2": "Glover Teixeira",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A champion pops his challenger's shoulder with a defensive grip and cruises to a decision defense."
+  },
+  {
+   "eventNumber": 173,
+   "year": 2014,
+   "fighter1": "Renan Barão",
+   "fighter2": "T.J. Dillashaw",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "clue": "A massive underdog out-strikes and out-moves the pound-for-pound champ before a fifth-round finish."
+  },
+  {
+   "eventNumber": 175,
+   "year": 2014,
+   "fighter1": "Chris Weidman",
+   "fighter2": "Lyoto Machida",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A young champion out-points an elusive karateka to prove his title reign was no fluke."
+  },
+  {
+   "eventNumber": 182,
+   "year": 2015,
+   "fighter1": "Jon Jones",
+   "fighter2": "Daniel Cormier",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "Two rivals who brawled at a press conference finally meet; the champ wins a bad-blood decision."
+  },
+  {
+   "eventNumber": 183,
+   "year": 2015,
+   "fighter1": "Anderson Silva",
+   "fighter2": "Nick Diaz",
+   "weightClass": "Middleweight",
+   "clue": "A taunt-filled catchweight spectacle between two icons is later overturned to a no-contest over drug tests."
+  },
+  {
+   "eventNumber": 187,
+   "year": 2015,
+   "fighter1": "Anthony Johnson",
+   "fighter2": "Daniel Cormier",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "Dropped early, a wrestler recovers to submit a knockout artist for a vacant belt."
+  },
+  {
+   "eventNumber": 188,
+   "year": 2015,
+   "fighter1": "Cain Velasquez",
+   "fighter2": "Fabrício Werdum",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "venue": "Mexico City, Mexico",
+   "clue": "At high altitude, a gassed champion gets submitted, unifying the belt for a Brazilian grappler."
+  },
+  {
+   "eventNumber": 189,
+   "year": 2015,
+   "fighter1": "Conor McGregor",
+   "fighter2": "Chad Mendes",
+   "weightClass": "Featherweight",
+   "title": true,
+   "clue": "A brash Irishman survives takedowns and elbows to stop a late-notice wrestler for an interim belt."
+  },
+  {
+   "eventNumber": 192,
+   "year": 2015,
+   "fighter1": "Daniel Cormier",
+   "fighter2": "Alexander Gustafsson",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A grinding five-round war sees the champion narrowly retain against the division's toughest out."
+  },
+  {
+   "eventNumber": 193,
+   "year": 2015,
+   "fighter1": "Holly Holm",
+   "fighter2": "Ronda Rousey",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "venue": "Melbourne, Australia",
+   "clue": "Before 56,000 fans, a former boxing world champion head-kicks the sport's biggest star into a stunning upset."
+  },
+  {
+   "eventNumber": 194,
+   "year": 2015,
+   "fighter1": "Conor McGregor",
+   "fighter2": "José Aldo",
+   "weightClass": "Featherweight",
+   "title": true,
+   "clue": "A single counter left hand ends a decade-long unbeaten reign in thirteen seconds."
+  },
+  {
+   "eventNumber": 195,
+   "year": 2016,
+   "fighter1": "Robbie Lawler",
+   "fighter2": "Carlos Condit",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A frantic, back-and-forth five-round title war ends on a split decision fans still argue about."
+  },
+  {
+   "eventNumber": 196,
+   "year": 2016,
+   "fighter1": "Nate Diaz",
+   "fighter2": "Conor McGregor",
+   "weightClass": "Welterweight",
+   "clue": "Stepping up on short notice two divisions north, a Stockton underdog submits a superstar and shocks the world."
+  },
+  {
+   "eventNumber": 198,
+   "year": 2016,
+   "fighter1": "Fabrício Werdum",
+   "fighter2": "Stipe Miocic",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "The champion rushes in and gets countered cold, crowning a new heavyweight king before a huge Brazilian crowd."
+  },
+  {
+   "eventNumber": 199,
+   "year": 2016,
+   "fighter1": "Luke Rockhold",
+   "fighter2": "Michael Bisping",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "On eleven days' notice, a long-time gatekeeper knocks out the champion to finally win a belt."
+  },
+  {
+   "eventNumber": 200,
+   "year": 2016,
+   "fighter1": "Amanda Nunes",
+   "fighter2": "Miesha Tate",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "clue": "On a landmark card, a Brazilian powerhouse submits the champion in under four minutes to begin a historic reign."
+  },
+  {
+   "eventNumber": 201,
+   "year": 2016,
+   "fighter1": "Robbie Lawler",
+   "fighter2": "Tyron Woodley",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A first-round knockout ends a beloved champion's reign and starts a long, divisive one."
+  },
+  {
+   "eventNumber": 202,
+   "year": 2016,
+   "fighter1": "Nate Diaz",
+   "fighter2": "Conor McGregor",
+   "weightClass": "Welterweight",
+   "clue": "A blood-soaked rematch of a stunning upset goes the distance and ends in a razor-thin majority decision."
+  },
+  {
+   "eventNumber": 203,
+   "year": 2016,
+   "fighter1": "Stipe Miocic",
+   "fighter2": "Alistair Overeem",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "Rocked early, a hometown Ohio champion recovers to knock out a former kickboxing star in the first."
+  },
+  {
+   "eventNumber": 205,
+   "year": 2016,
+   "fighter1": "Eddie Alvarez",
+   "fighter2": "Conor McGregor",
+   "weightClass": "Lightweight",
+   "title": true,
+   "venue": "New York City, New York",
+   "clue": "On the promotion's Madison Square Garden debut, a challenger becomes the first to hold two belts at once."
+  },
+  {
+   "eventNumber": 206,
+   "year": 2016,
+   "fighter1": "Max Holloway",
+   "fighter2": "Anthony Pettis",
+   "weightClass": "Featherweight",
+   "title": true,
+   "clue": "A rising Hawaiian stops a former lightweight champ to grab an interim belt and start a long win streak."
+  },
+  {
+   "eventNumber": 207,
+   "year": 2016,
+   "fighter1": "Amanda Nunes",
+   "fighter2": "Ronda Rousey",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "clue": "A former superstar's comeback lasts 48 seconds against a devastating champion."
+  },
+  {
+   "eventNumber": 210,
+   "year": 2017,
+   "fighter1": "Daniel Cormier",
+   "fighter2": "Anthony Johnson",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A champion submits a feared knockout artist again, prompting the challenger to retire in the cage."
+  },
+  {
+   "eventNumber": 212,
+   "year": 2017,
+   "fighter1": "José Aldo",
+   "fighter2": "Max Holloway",
+   "weightClass": "Featherweight",
+   "title": true,
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A rising star stops the long-reigning champion in his own country to unify the featherweight belt."
+  },
+  {
+   "eventNumber": 214,
+   "year": 2017,
+   "fighter1": "Daniel Cormier",
+   "fighter2": "Jon Jones",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A head-kick knockout in the rematch is later overturned to a no-contest after a failed drug test."
+  },
+  {
+   "eventNumber": 217,
+   "year": 2017,
+   "fighter1": "Michael Bisping",
+   "fighter2": "Georges St-Pierre",
+   "weightClass": "Middleweight",
+   "title": true,
+   "venue": "New York City, New York",
+   "clue": "A returning welterweight legend jumps up a division and chokes out the champion to win a belt in a new weight class."
+  },
+  {
+   "eventNumber": 220,
+   "year": 2018,
+   "fighter1": "Stipe Miocic",
+   "fighter2": "Francis Ngannou",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A wrestling champion neutralizes a terrifying puncher for five rounds to set a heavyweight defense record."
+  },
+  {
+   "eventNumber": 223,
+   "year": 2018,
+   "fighter1": "Khabib Nurmagomedov",
+   "fighter2": "Al Iaquinta",
+   "weightClass": "Lightweight",
+   "title": true,
+   "venue": "Brooklyn, New York",
+   "clue": "After a chaotic week of dropouts and a bus-window rampage, an undefeated grappler wins a vacant belt on points."
+  },
+  {
+   "eventNumber": 226,
+   "year": 2018,
+   "fighter1": "Stipe Miocic",
+   "fighter2": "Daniel Cormier",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A two-division champion is crowned when he flattens the record-setting heavyweight king in the first round."
+  },
+  {
+   "eventNumber": 229,
+   "year": 2018,
+   "fighter1": "Khabib Nurmagomedov",
+   "fighter2": "Conor McGregor",
+   "weightClass": "Lightweight",
+   "title": true,
+   "venue": "Las Vegas, Nevada",
+   "clue": "The biggest pay-per-view in company history ends in a fourth-round tap and a wild post-fight brawl over the cage."
+  },
+  {
+   "eventNumber": 232,
+   "year": 2018,
+   "fighter1": "Jon Jones",
+   "fighter2": "Alexander Gustafsson",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "Relocated on six days' notice over a drug-test flag, a returning great stops his toughest rival in the rematch."
+  },
+  {
+   "eventNumber": 234,
+   "year": 2019,
+   "fighter1": "Israel Adesanya",
+   "fighter2": "Anderson Silva",
+   "weightClass": "Middleweight",
+   "clue": "A flashy young striker out-points his aging idol in a respectful, technical showcase."
+  },
+  {
+   "eventNumber": 235,
+   "year": 2019,
+   "fighter1": "Jon Jones",
+   "fighter2": "Anthony Smith",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A champion is docked a point for an illegal knee but cruises to a clear decision defense."
+  },
+  {
+   "eventNumber": 236,
+   "year": 2019,
+   "fighter1": "Max Holloway",
+   "fighter2": "Dustin Poirier",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "Two featherweight rivals move up a division for an interim belt in an instant-classic five-round decision."
+  },
+  {
+   "eventNumber": 239,
+   "year": 2019,
+   "fighter1": "Jon Jones",
+   "fighter2": "Thiago Santos",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A challenger blows out both knees mid-fight yet nearly pulls off the upset, losing a split decision."
+  },
+  {
+   "eventNumber": 241,
+   "year": 2019,
+   "fighter1": "Daniel Cormier",
+   "fighter2": "Stipe Miocic",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "The former champ reclaims his belt with a body-shot barrage that drops the man who KO'd him a year earlier."
+  },
+  {
+   "eventNumber": 242,
+   "year": 2019,
+   "fighter1": "Khabib Nurmagomedov",
+   "fighter2": "Dustin Poirier",
+   "weightClass": "Lightweight",
+   "title": true,
+   "venue": "Abu Dhabi",
+   "clue": "An undefeated champion unifies the belt with a third-round rear-naked choke."
+  },
+  {
+   "eventNumber": 243,
+   "year": 2019,
+   "fighter1": "Robert Whittaker",
+   "fighter2": "Israel Adesanya",
+   "weightClass": "Middleweight",
+   "title": true,
+   "venue": "Melbourne, Australia",
+   "clue": "Before 57,000 fans, a challenger knocks out the champion in the second to unify the middleweight belt."
+  },
+  {
+   "eventNumber": 244,
+   "year": 2019,
+   "fighter1": "Jorge Masvidal",
+   "fighter2": "Nate Diaz",
+   "weightClass": "Welterweight",
+   "venue": "New York City, New York",
+   "clue": "A one-off 'baddest' belt is decided by a doctor's stoppage for a nasty cut, to the crowd's dismay."
+  },
+  {
+   "eventNumber": 245,
+   "year": 2019,
+   "fighter1": "Kamaru Usman",
+   "fighter2": "Colby Covington",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A brutal grudge match between former teammates ends with a broken jaw and a fifth-round stoppage."
+  },
+  {
+   "eventNumber": 246,
+   "year": 2020,
+   "fighter1": "Conor McGregor",
+   "fighter2": "Donald Cerrone",
+   "weightClass": "Welterweight",
+   "clue": "A superstar's comeback lasts forty seconds thanks to shoulder strikes and a head kick."
+  },
+  {
+   "eventNumber": 247,
+   "year": 2020,
+   "fighter1": "Jon Jones",
+   "fighter2": "Dominick Reyes",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "venue": "Houston, Texas",
+   "clue": "A champion keeps his belt on a controversial decision many thought he lost, in his last fight at the weight."
+  },
+  {
+   "eventNumber": 249,
+   "year": 2020,
+   "fighter1": "Tony Ferguson",
+   "fighter2": "Justin Gaethje",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "On the sport's return during the shutdown, a five-round beating ends a long win streak and earns an interim belt."
+  },
+  {
+   "eventNumber": 251,
+   "year": 2020,
+   "fighter1": "Kamaru Usman",
+   "fighter2": "Jorge Masvidal",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "Abu Dhabi",
+   "clue": "On six days' notice at a remote island venue, a late replacement drops a decision to the dominant champ."
+  },
+  {
+   "eventNumber": 252,
+   "year": 2020,
+   "fighter1": "Stipe Miocic",
+   "fighter2": "Daniel Cormier",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "The rubber match of a heavyweight trilogy goes the champion's way on the cards, closing the rivalry."
+  },
+  {
+   "eventNumber": 253,
+   "year": 2020,
+   "fighter1": "Israel Adesanya",
+   "fighter2": "Paulo Costa",
+   "weightClass": "Middleweight",
+   "title": true,
+   "venue": "Abu Dhabi",
+   "clue": "An undefeated champion toys with an undefeated challenger before a second-round finish."
+  },
+  {
+   "eventNumber": 257,
+   "year": 2021,
+   "fighter1": "Dustin Poirier",
+   "fighter2": "Conor McGregor",
+   "weightClass": "Lightweight",
+   "venue": "Abu Dhabi",
+   "clue": "Chopping leg kicks set up the first knockout loss of a superstar's career in their rematch."
+  },
+  {
+   "eventNumber": 261,
+   "year": 2021,
+   "fighter1": "Kamaru Usman",
+   "fighter2": "Jorge Masvidal",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "Jacksonville, Florida",
+   "clue": "Before the first full-capacity crowd back from the pandemic, a champion ends the rivalry with a highlight knockout."
+  },
+  {
+   "eventNumber": 264,
+   "year": 2021,
+   "fighter1": "Dustin Poirier",
+   "fighter2": "Conor McGregor",
+   "weightClass": "Lightweight",
+   "clue": "A trilogy fight ends in the cruelest way when a superstar snaps his ankle at the end of round one."
+  },
+  {
+   "eventNumber": 266,
+   "year": 2021,
+   "fighter1": "Alexander Volkanovski",
+   "fighter2": "Brian Ortega",
+   "weightClass": "Featherweight",
+   "title": true,
+   "clue": "A champion survives two deep submission scares to win a featherweight classic on the cards."
+  },
+  {
+   "eventNumber": 268,
+   "year": 2021,
+   "fighter1": "Kamaru Usman",
+   "fighter2": "Colby Covington",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "New York City, New York",
+   "clue": "A rematch of a brutal rivalry goes all five rounds this time, with the champ retaining a close decision."
+  },
+  {
+   "eventNumber": 269,
+   "year": 2021,
+   "fighter1": "Charles Oliveira",
+   "fighter2": "Dustin Poirier",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "A Brazilian submission wizard survives a rocky start to sink a third-round choke and defend his belt."
+  },
+  {
+   "eventNumber": 270,
+   "year": 2022,
+   "fighter1": "Francis Ngannou",
+   "fighter2": "Ciryl Gane",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "Fighting on a bad knee, a knockout artist surprises everyone by out-wrestling his former training partner."
+  },
+  {
+   "eventNumber": 276,
+   "year": 2022,
+   "fighter1": "Israel Adesanya",
+   "fighter2": "Jared Cannonier",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A flashy champion coasts to a cautious decision that draws boos on a stacked holiday-weekend card."
+  },
+  {
+   "eventNumber": 281,
+   "year": 2022,
+   "fighter1": "Israel Adesanya",
+   "fighter2": "Alex Pereira",
+   "weightClass": "Middleweight",
+   "title": true,
+   "venue": "New York City, New York",
+   "clue": "A kickboxing rival who beat him twice before finishes the champ late in the fifth to take the belt."
+  },
+  {
+   "eventNumber": 284,
+   "year": 2023,
+   "fighter1": "Islam Makhachev",
+   "fighter2": "Alexander Volkanovski",
+   "weightClass": "Lightweight",
+   "title": true,
+   "venue": "Perth, Australia",
+   "clue": "Two pound-for-pound kings collide as a champion narrowly edges a smaller titleholder moving up a division."
+  },
+  {
+   "eventNumber": 294,
+   "year": 2023,
+   "fighter1": "Islam Makhachev",
+   "fighter2": "Alexander Volkanovski",
+   "weightClass": "Lightweight",
+   "title": true,
+   "venue": "Abu Dhabi",
+   "clue": "Stepping in on short notice for a rematch, a smaller champ is starched by a head kick in round one."
+  },
+  {
+   "eventNumber": 296,
+   "year": 2023,
+   "fighter1": "Leon Edwards",
+   "fighter2": "Colby Covington",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A composed champion out-strikes a trash-talking challenger over five rounds to defend his belt."
+  },
+  {
+   "eventNumber": 300,
+   "year": 2024,
+   "fighter1": "Alex Pereira",
+   "fighter2": "Jamahal Hill",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "On a milestone card, a former kickboxer defends his new belt with a first-round knockout."
+  },
+  {
+   "eventNumber": 303,
+   "year": 2024,
+   "fighter1": "Alex Pereira",
+   "fighter2": "Jiří Procházka",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "On a chaotic week that lost its original headliner, a champion lands a highlight head kick to retain."
+  },
+  {
+   "eventNumber": 306,
+   "year": 2024,
+   "fighter1": "Sean O'Malley",
+   "fighter2": "Merab Dvalishvili",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "clue": "A relentless cardio machine out-works a flashy champion to take the bantamweight belt at a Sphere spectacle."
+  },
+  {
+   "eventNumber": 309,
+   "year": 2024,
+   "fighter1": "Jon Jones",
+   "fighter2": "Stipe Miocic",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "venue": "New York City, New York",
+   "clue": "A returning great ends a heavyweight legend's career with a spinning-kick-to-the-body finish."
+  }
+ ]
+}

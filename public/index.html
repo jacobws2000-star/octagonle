@@ -49,6 +49,10 @@
         <div class="mode-name">Title Defense — Extreme</div>
         <div class="mode-desc">Name the champion from one random UFC title bout (leans toward their earliest). 6 guesses.</div>
       </button>
+      <button class="mode-option" data-mode="moments">
+        <div class="mode-name">Defining Moments</div>
+        <div class="mode-desc">From clues about a famous numbered main event, guess the event number, both fighters, and the year. Points add up.</div>
+      </button>
       <button id="mode-close" class="btn">Close</button>
     </div>
   </div>
@@ -133,8 +137,39 @@
         <div id="title-rows"></div>
       </div>
     </div>
+
+    <!-- Defining Moments mode: clue-based trivia -->
+    <div id="moments-view" class="hidden">
+      <div class="clue-header">
+        <span>Name the moment</span>
+        <span id="m-score" class="attempts"></span>
+      </div>
+      <div class="m-clue-card">
+        <div id="m-tags" class="m-tags"></div>
+        <div id="m-clue" class="m-clue"></div>
+      </div>
+      <div class="m-form">
+        <label class="m-field"><span>Event #</span>
+          <input id="m-event" type="number" inputmode="numeric" placeholder="e.g. 229" autocomplete="off"></label>
+        <label class="m-field"><span>Fighter 1</span>
+          <input id="m-f1" type="text" list="moments-fighter-list" placeholder="Name…" autocomplete="off"></label>
+        <label class="m-field"><span>Fighter 2</span>
+          <input id="m-f2" type="text" list="moments-fighter-list" placeholder="Name…" autocomplete="off"></label>
+        <label class="m-field"><span>Year</span>
+          <input id="m-year" type="number" inputmode="numeric" placeholder="e.g. 2018" autocomplete="off"></label>
+        <button id="m-submit" class="btn btn-accent">Submit</button>
+      </div>
+      <datalist id="moments-fighter-list"></datalist>
+
+      <div id="m-reveal" class="m-reveal hidden">
+        <div id="m-points" class="m-points"></div>
+        <div id="m-answer" class="m-answer"></div>
+        <button id="m-next" class="btn">Next moment ▶</button>
+      </div>
+    </div>
   </main>
 
   <script src="game.js"></script>
+  <script src="moments.js"></script>
 </body>
 </html>
