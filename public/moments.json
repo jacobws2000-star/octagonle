@@ -1,6 +1,6 @@
 {
  "meta": {
-  "count": 100,
+  "count": 220,
   "source": "curated; verified vs Wikipedia List of UFC events"
  },
  "moments": [
@@ -920,6 +920,1086 @@
    "title": true,
    "venue": "New York City, New York",
    "clue": "A returning great ends a heavyweight legend's career with a spinning-kick-to-the-body finish."
+  },
+  {
+   "eventNumber": 62,
+   "year": 2006,
+   "fighter1": "Chuck Liddell",
+   "fighter2": "Renato Sobral",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A knockout-artist champion stops a Brazilian challenger for the second time."
+  },
+  {
+   "eventNumber": 86,
+   "year": 2008,
+   "fighter1": "Quinton Jackson",
+   "fighter2": "Forrest Griffin",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A former reality-show underdog leg-kicks his way to a razor-close decision and the belt."
+  },
+  {
+   "eventNumber": 89,
+   "year": 2008,
+   "fighter1": "Michael Bisping",
+   "fighter2": "Chris Leben",
+   "weightClass": "Middleweight",
+   "venue": "Birmingham, England",
+   "clue": "On the promotion's return to England, a hometown star out-points a brawler."
+  },
+  {
+   "eventNumber": 93,
+   "year": 2009,
+   "fighter1": "Rich Franklin",
+   "fighter2": "Dan Henderson",
+   "weightClass": "Catchweight",
+   "clue": "Two former champions meet at a catchweight in a close decision."
+  },
+  {
+   "eventNumber": 95,
+   "year": 2009,
+   "fighter1": "Diego Sanchez",
+   "fighter2": "Joe Stevenson",
+   "weightClass": "Lightweight",
+   "clue": "A blood-soaked lightweight decision earns a title shot for the winner."
+  },
+  {
+   "eventNumber": 96,
+   "year": 2009,
+   "fighter1": "Quinton Jackson",
+   "fighter2": "Keith Jardine",
+   "weightClass": "Light Heavyweight",
+   "clue": "A former champ grinds out a decision over a quirky, unpredictable striker."
+  },
+  {
+   "eventNumber": 98,
+   "year": 2009,
+   "fighter1": "Rashad Evans",
+   "fighter2": "Lyoto Machida",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "An elusive karate stylist knocks out an undefeated champion to take the belt."
+  },
+  {
+   "eventNumber": 102,
+   "year": 2009,
+   "fighter1": "Randy Couture",
+   "fighter2": "Antonio Rodrigo Nogueira",
+   "weightClass": "Heavyweight",
+   "clue": "Two aging legends trade a competitive decision in a heavyweight showcase."
+  },
+  {
+   "eventNumber": 103,
+   "year": 2009,
+   "fighter1": "Rich Franklin",
+   "fighter2": "Vitor Belfort",
+   "weightClass": "Catchweight",
+   "clue": "A hard left hand ends the night early for a former middleweight champ."
+  },
+  {
+   "eventNumber": 105,
+   "year": 2009,
+   "fighter1": "Randy Couture",
+   "fighter2": "Brandon Vera",
+   "weightClass": "Light Heavyweight",
+   "clue": "A veteran legend out-works a once-hyped prospect over three rounds."
+  },
+  {
+   "eventNumber": 106,
+   "year": 2009,
+   "fighter1": "Tito Ortiz",
+   "fighter2": "Forrest Griffin",
+   "weightClass": "Light Heavyweight",
+   "clue": "A returning former champion avenges a loss in a close, controversial rematch decision."
+  },
+  {
+   "eventNumber": 107,
+   "year": 2009,
+   "fighter1": "B.J. Penn",
+   "fighter2": "Diego Sanchez",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "A dominant champion opens a huge cut and finishes his challenger in the fifth."
+  },
+  {
+   "eventNumber": 108,
+   "year": 2010,
+   "fighter1": "Rashad Evans",
+   "fighter2": "Thiago Silva",
+   "weightClass": "Light Heavyweight",
+   "clue": "A former champion out-wrestles a dangerous Brazilian striker over three rounds."
+  },
+  {
+   "eventNumber": 110,
+   "year": 2010,
+   "fighter1": "Antonio Rodrigo Nogueira",
+   "fighter2": "Cain Velasquez",
+   "weightClass": "Heavyweight",
+   "venue": "Sydney, Australia",
+   "clue": "A rising wrestler-boxer becomes the first to knock out a legendary Brazilian, earning a title shot."
+  },
+  {
+   "eventNumber": 113,
+   "year": 2010,
+   "fighter1": "Lyoto Machida",
+   "fighter2": "Mauricio Rua",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "After a disputed first meeting, the challenger removes all doubt with a first-round knockout."
+  },
+  {
+   "eventNumber": 114,
+   "year": 2010,
+   "fighter1": "Quinton Jackson",
+   "fighter2": "Rashad Evans",
+   "weightClass": "Light Heavyweight",
+   "clue": "A long-simmering coaching feud finally settles with a competitive decision."
+  },
+  {
+   "eventNumber": 115,
+   "year": 2010,
+   "fighter1": "Chuck Liddell",
+   "fighter2": "Rich Franklin",
+   "weightClass": "Light Heavyweight",
+   "clue": "A body shot sets up the knockout that pushes a beloved legend toward retirement."
+  },
+  {
+   "eventNumber": 118,
+   "year": 2010,
+   "fighter1": "Frankie Edgar",
+   "fighter2": "B.J. Penn",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "A speedy champion removes all doubt from an upset by clearly out-pointing the former king in the rematch."
+  },
+  {
+   "eventNumber": 119,
+   "year": 2010,
+   "fighter1": "Frank Mir",
+   "fighter2": "Mirko Cro Cop",
+   "weightClass": "Heavyweight",
+   "clue": "A knee ends the night for a legendary kickboxer in a heavyweight clash."
+  },
+  {
+   "eventNumber": 120,
+   "year": 2010,
+   "fighter1": "Michael Bisping",
+   "fighter2": "Yoshihiro Akiyama",
+   "weightClass": "Middleweight",
+   "venue": "London, England",
+   "clue": "A hometown favorite edges a judo stylist in a close London decision."
+  },
+  {
+   "eventNumber": 122,
+   "year": 2010,
+   "fighter1": "Nate Marquardt",
+   "fighter2": "Yushin Okami",
+   "weightClass": "Middleweight",
+   "clue": "A grinding decision earns a middleweight title shot in Germany."
+  },
+  {
+   "eventNumber": 123,
+   "year": 2010,
+   "fighter1": "Quinton Jackson",
+   "fighter2": "Lyoto Machida",
+   "weightClass": "Light Heavyweight",
+   "clue": "A former champion edges an elusive karateka in a razor-thin, disputed decision."
+  },
+  {
+   "eventNumber": 126,
+   "year": 2011,
+   "fighter1": "Anderson Silva",
+   "fighter2": "Vitor Belfort",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A picture-perfect front kick to the face produces one of the greatest knockouts ever."
+  },
+  {
+   "eventNumber": 127,
+   "year": 2011,
+   "fighter1": "B.J. Penn",
+   "fighter2": "Jon Fitch",
+   "weightClass": "Welterweight",
+   "clue": "A former champion drops a wrestler early but has to settle for a draw."
+  },
+  {
+   "eventNumber": 130,
+   "year": 2011,
+   "fighter1": "Quinton Jackson",
+   "fighter2": "Matt Hamill",
+   "weightClass": "Light Heavyweight",
+   "clue": "A former champion out-points a deaf wrestler he once coached."
+  },
+  {
+   "eventNumber": 131,
+   "year": 2011,
+   "fighter1": "Junior dos Santos",
+   "fighter2": "Shane Carwin",
+   "weightClass": "Heavyweight",
+   "clue": "A slick boxer batters a heavy-handed wrestler for three rounds to earn a title shot."
+  },
+  {
+   "eventNumber": 132,
+   "year": 2011,
+   "fighter1": "Dominick Cruz",
+   "fighter2": "Urijah Faber",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "clue": "A rangy, in-and-out champion out-points his longtime rival to defend the bantamweight belt."
+  },
+  {
+   "eventNumber": 133,
+   "year": 2011,
+   "fighter1": "Rashad Evans",
+   "fighter2": "Tito Ortiz",
+   "weightClass": "Light Heavyweight",
+   "clue": "A former champion stops an aging rival to punch his ticket to a title shot."
+  },
+  {
+   "eventNumber": 134,
+   "year": 2011,
+   "fighter1": "Anderson Silva",
+   "fighter2": "Yushin Okami",
+   "weightClass": "Middleweight",
+   "title": true,
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A dominant champion knocks out the last man to hold a win over him, at home in Brazil."
+  },
+  {
+   "eventNumber": 137,
+   "year": 2011,
+   "fighter1": "B.J. Penn",
+   "fighter2": "Nick Diaz",
+   "weightClass": "Welterweight",
+   "clue": "A high-volume Stockton boxer out-strikes a former champion, who retires in the cage afterward."
+  },
+  {
+   "eventNumber": 138,
+   "year": 2011,
+   "fighter1": "Chris Leben",
+   "fighter2": "Mark Muñoz",
+   "weightClass": "Middleweight",
+   "venue": "Birmingham, England",
+   "clue": "A wrestler's ground-and-pound forces a corner stoppage in England."
+  },
+  {
+   "eventNumber": 140,
+   "year": 2011,
+   "fighter1": "Jon Jones",
+   "fighter2": "Lyoto Machida",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A champion chokes an elusive challenger unconscious with a standing guillotine, then lets him fall."
+  },
+  {
+   "eventNumber": 146,
+   "year": 2012,
+   "fighter1": "Junior dos Santos",
+   "fighter2": "Frank Mir",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A knockout-artist champion drops a former titleholder to defend the heavyweight belt."
+  },
+  {
+   "eventNumber": 147,
+   "year": 2012,
+   "fighter1": "Wanderlei Silva",
+   "fighter2": "Rich Franklin",
+   "weightClass": "Catchweight",
+   "venue": "Belo Horizonte, Brazil",
+   "clue": "Two legends brawl at a catchweight in Brazil, with the American edging a decision."
+  },
+  {
+   "eventNumber": 150,
+   "year": 2012,
+   "fighter1": "Benson Henderson",
+   "fighter2": "Frankie Edgar",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "A champion narrowly retains a lightweight belt in a hotly disputed rematch decision."
+  },
+  {
+   "eventNumber": 152,
+   "year": 2012,
+   "fighter1": "Jon Jones",
+   "fighter2": "Vitor Belfort",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A champion survives a scary early armbar, then submits the challenger himself."
+  },
+  {
+   "eventNumber": 153,
+   "year": 2012,
+   "fighter1": "Anderson Silva",
+   "fighter2": "Stephan Bonnar",
+   "weightClass": "Light Heavyweight",
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A middleweight great toys with a light heavyweight before a knee to the body ends it."
+  },
+  {
+   "eventNumber": 156,
+   "year": 2013,
+   "fighter1": "José Aldo",
+   "fighter2": "Frankie Edgar",
+   "weightClass": "Featherweight",
+   "title": true,
+   "clue": "A dominant champion out-points a former lightweight king to defend the featherweight belt."
+  },
+  {
+   "eventNumber": 159,
+   "year": 2013,
+   "fighter1": "Jon Jones",
+   "fighter2": "Chael Sonnen",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A champion finishes a trash-talking challenger in a round despite breaking his own toe grotesquely."
+  },
+  {
+   "eventNumber": 160,
+   "year": 2013,
+   "fighter1": "Cain Velasquez",
+   "fighter2": "Antonio Silva",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A relentless champion overwhelms a giant Brazilian for a second brutal first-round stoppage."
+  },
+  {
+   "eventNumber": 161,
+   "year": 2013,
+   "fighter1": "Rashad Evans",
+   "fighter2": "Dan Henderson",
+   "weightClass": "Light Heavyweight",
+   "clue": "A former champion out-wrestles a legendary power-puncher in a split decision."
+  },
+  {
+   "eventNumber": 163,
+   "year": 2013,
+   "fighter1": "José Aldo",
+   "fighter2": "Chan Sung Jung",
+   "weightClass": "Featherweight",
+   "title": true,
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A challenger's shoulder pops out mid-fight, ending his title bid against the champion at home in Brazil."
+  },
+  {
+   "eventNumber": 164,
+   "year": 2013,
+   "fighter1": "Benson Henderson",
+   "fighter2": "Anthony Pettis",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "A challenger sinks a first-round armbar to take the lightweight belt and complete a rivalry."
+  },
+  {
+   "eventNumber": 167,
+   "year": 2013,
+   "fighter1": "Georges St-Pierre",
+   "fighter2": "Johny Hendricks",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A battered champion wins a hugely controversial split decision, then walks away from the sport at his peak."
+  },
+  {
+   "eventNumber": 169,
+   "year": 2014,
+   "fighter1": "Renan Barão",
+   "fighter2": "Urijah Faber",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "clue": "A dominant champion stops his rival early to retain the bantamweight belt."
+  },
+  {
+   "eventNumber": 170,
+   "year": 2014,
+   "fighter1": "Ronda Rousey",
+   "fighter2": "Sara McMann",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "clue": "A dominant champion ends an Olympic wrestler's night with a first-round knee to the body."
+  },
+  {
+   "eventNumber": 174,
+   "year": 2014,
+   "fighter1": "Demetrious Johnson",
+   "fighter2": "Ali Bagautinov",
+   "weightClass": "Flyweight",
+   "title": true,
+   "venue": "Vancouver, British Columbia",
+   "clue": "The pound-for-pound flyweight king cruises to another shutout title defense."
+  },
+  {
+   "eventNumber": 177,
+   "year": 2014,
+   "fighter1": "T.J. Dillashaw",
+   "fighter2": "Joe Soto",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "clue": "A new champion head-kicks a debuting late-replacement challenger in the fifth."
+  },
+  {
+   "eventNumber": 178,
+   "year": 2014,
+   "fighter1": "Demetrious Johnson",
+   "fighter2": "Chris Cariaso",
+   "weightClass": "Flyweight",
+   "title": true,
+   "clue": "The pound-for-pound flyweight king racks up another dominant defense with a kimura."
+  },
+  {
+   "eventNumber": 179,
+   "year": 2014,
+   "fighter1": "José Aldo",
+   "fighter2": "Chad Mendes",
+   "weightClass": "Featherweight",
+   "title": true,
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A featherweight classic in Brazil sees the champion narrowly out-point a powerful wrestler in the rematch."
+  },
+  {
+   "eventNumber": 180,
+   "year": 2014,
+   "fighter1": "Fabrício Werdum",
+   "fighter2": "Mark Hunt",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "venue": "Mexico City, Mexico",
+   "clue": "On the promotion's Mexico debut, a Brazilian grappler wins an interim belt with a knee finish."
+  },
+  {
+   "eventNumber": 181,
+   "year": 2014,
+   "fighter1": "Johny Hendricks",
+   "fighter2": "Robbie Lawler",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A rematch of a five-round war goes the other way this time on a razor-thin decision."
+  },
+  {
+   "eventNumber": 184,
+   "year": 2015,
+   "fighter1": "Ronda Rousey",
+   "fighter2": "Cat Zingano",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "clue": "A champion catches a rushing challenger in a 14-second armbar, her fastest finish."
+  },
+  {
+   "eventNumber": 185,
+   "year": 2015,
+   "fighter1": "Anthony Pettis",
+   "fighter2": "Rafael dos Anjos",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "A relentless Brazilian pressure-fighter out-works a flashy champion to take the lightweight belt."
+  },
+  {
+   "eventNumber": 186,
+   "year": 2015,
+   "fighter1": "Demetrious Johnson",
+   "fighter2": "Kyoji Horiguchi",
+   "weightClass": "Flyweight",
+   "title": true,
+   "clue": "A champion sinks the latest submission in UFC history — an armbar with one second left."
+  },
+  {
+   "eventNumber": 190,
+   "year": 2015,
+   "fighter1": "Ronda Rousey",
+   "fighter2": "Bethe Correia",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A champion silences a trash-talking challenger with a 34-second knockout in Brazil."
+  },
+  {
+   "eventNumber": 191,
+   "year": 2015,
+   "fighter1": "Demetrious Johnson",
+   "fighter2": "John Dodson",
+   "weightClass": "Flyweight",
+   "title": true,
+   "clue": "The flyweight king avenges a close fight by clearly out-pointing a fast-handed challenger in the rematch."
+  },
+  {
+   "eventNumber": 197,
+   "year": 2016,
+   "fighter1": "Jon Jones",
+   "fighter2": "Ovince Saint Preux",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A returning great wins an interim belt on the cards after a long layoff and a late opponent switch."
+  },
+  {
+   "eventNumber": 204,
+   "year": 2016,
+   "fighter1": "Michael Bisping",
+   "fighter2": "Dan Henderson",
+   "weightClass": "Middleweight",
+   "title": true,
+   "venue": "Manchester, England",
+   "clue": "A champion survives two knockdowns from a retiring legend to keep his belt at home."
+  },
+  {
+   "eventNumber": 208,
+   "year": 2017,
+   "fighter1": "Holly Holm",
+   "fighter2": "Germaine de Randamie",
+   "weightClass": "Women's Featherweight",
+   "title": true,
+   "clue": "The first women's featherweight champion is crowned amid controversy over late-hit strikes."
+  },
+  {
+   "eventNumber": 209,
+   "year": 2017,
+   "fighter1": "Tyron Woodley",
+   "fighter2": "Stephen Thompson",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A champion retains his belt in a rematch after their first meeting ended in a draw."
+  },
+  {
+   "eventNumber": 211,
+   "year": 2017,
+   "fighter1": "Stipe Miocic",
+   "fighter2": "Junior dos Santos",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A champion avenges an old loss with a first-round knockout to defend the heavyweight belt."
+  },
+  {
+   "eventNumber": 213,
+   "year": 2017,
+   "fighter1": "Yoel Romero",
+   "fighter2": "Robert Whittaker",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A durable challenger overcomes an explosive wrestler to win an interim middleweight belt."
+  },
+  {
+   "eventNumber": 215,
+   "year": 2017,
+   "fighter1": "Amanda Nunes",
+   "fighter2": "Valentina Shevchenko",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "clue": "A champion edges a technical striker in a razor-close rematch decision."
+  },
+  {
+   "eventNumber": 216,
+   "year": 2017,
+   "fighter1": "Tony Ferguson",
+   "fighter2": "Kevin Lee",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "A third-round triangle choke wins an interim lightweight belt and extends a long win streak."
+  },
+  {
+   "eventNumber": 218,
+   "year": 2017,
+   "fighter1": "Max Holloway",
+   "fighter2": "José Aldo",
+   "weightClass": "Featherweight",
+   "title": true,
+   "clue": "A rising champion stops the former long-reigning king again to cement his featherweight reign."
+  },
+  {
+   "eventNumber": 219,
+   "year": 2017,
+   "fighter1": "Cris Cyborg",
+   "fighter2": "Holly Holm",
+   "weightClass": "Women's Featherweight",
+   "title": true,
+   "clue": "A feared knockout artist out-points a former boxing champion to defend the featherweight belt."
+  },
+  {
+   "eventNumber": 221,
+   "year": 2018,
+   "fighter1": "Yoel Romero",
+   "fighter2": "Luke Rockhold",
+   "weightClass": "Middleweight",
+   "venue": "Perth, Australia",
+   "clue": "A missed-weight challenger knocks out a former champion late in a fight for a vacant interim belt."
+  },
+  {
+   "eventNumber": 222,
+   "year": 2018,
+   "fighter1": "Cris Cyborg",
+   "fighter2": "Yana Kunitskaya",
+   "weightClass": "Women's Featherweight",
+   "title": true,
+   "clue": "A dominant featherweight champion stops a short-notice challenger in the first round."
+  },
+  {
+   "eventNumber": 224,
+   "year": 2018,
+   "fighter1": "Amanda Nunes",
+   "fighter2": "Raquel Pennington",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A dominant champion stops a game challenger in the fifth to defend at home in Brazil."
+  },
+  {
+   "eventNumber": 225,
+   "year": 2018,
+   "fighter1": "Robert Whittaker",
+   "fighter2": "Yoel Romero",
+   "weightClass": "Middleweight",
+   "clue": "A champion survives a five-round war with an explosive rival who missed weight, winning a decision."
+  },
+  {
+   "eventNumber": 227,
+   "year": 2018,
+   "fighter1": "T.J. Dillashaw",
+   "fighter2": "Cody Garbrandt",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "clue": "A champion knocks out his former teammate again to close a bitter rivalry."
+  },
+  {
+   "eventNumber": 228,
+   "year": 2018,
+   "fighter1": "Tyron Woodley",
+   "fighter2": "Darren Till",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A champion submits an undefeated challenger with a second-round D'Arce choke."
+  },
+  {
+   "eventNumber": 230,
+   "year": 2018,
+   "fighter1": "Daniel Cormier",
+   "fighter2": "Derrick Lewis",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "venue": "New York City, New York",
+   "clue": "A two-division champion submits a heavy-handed knockout artist late to defend the heavyweight belt."
+  },
+  {
+   "eventNumber": 231,
+   "year": 2018,
+   "fighter1": "Max Holloway",
+   "fighter2": "Brian Ortega",
+   "weightClass": "Featherweight",
+   "title": true,
+   "venue": "Toronto, Ontario",
+   "clue": "A champion gives an undefeated challenger a five-round boxing lesson before a doctor's stoppage."
+  },
+  {
+   "eventNumber": 237,
+   "year": 2019,
+   "fighter1": "Rose Namajunas",
+   "fighter2": "Jéssica Andrade",
+   "weightClass": "Women's Strawweight",
+   "title": true,
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A champion is slammed unconscious in a stunning upset in Brazil."
+  },
+  {
+   "eventNumber": 238,
+   "year": 2019,
+   "fighter1": "Henry Cejudo",
+   "fighter2": "Marlon Moraes",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "clue": "An Olympic-gold champion rallies from a rough start to win a vacant second belt."
+  },
+  {
+   "eventNumber": 240,
+   "year": 2019,
+   "fighter1": "Max Holloway",
+   "fighter2": "Frankie Edgar",
+   "weightClass": "Featherweight",
+   "title": true,
+   "venue": "Edmonton, Alberta",
+   "clue": "A champion out-points a former lightweight king to defend the featherweight belt."
+  },
+  {
+   "eventNumber": 248,
+   "year": 2020,
+   "fighter1": "Israel Adesanya",
+   "fighter2": "Yoel Romero",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A champion wins a cautious, low-output decision that draws loud boos."
+  },
+  {
+   "eventNumber": 250,
+   "year": 2020,
+   "fighter1": "Amanda Nunes",
+   "fighter2": "Felicia Spencer",
+   "weightClass": "Women's Featherweight",
+   "title": true,
+   "clue": "A two-division champion cruises to a five-round shutout in a featherweight defense."
+  },
+  {
+   "eventNumber": 254,
+   "year": 2020,
+   "fighter1": "Khabib Nurmagomedov",
+   "fighter2": "Justin Gaethje",
+   "weightClass": "Lightweight",
+   "title": true,
+   "venue": "Abu Dhabi",
+   "clue": "An undefeated champion wins with a triangle choke, then retires in the cage in tears."
+  },
+  {
+   "eventNumber": 255,
+   "year": 2020,
+   "fighter1": "Deiveson Figueiredo",
+   "fighter2": "Alex Perez",
+   "weightClass": "Flyweight",
+   "title": true,
+   "clue": "A hard-hitting champion submits a challenger in the first round of a flyweight defense."
+  },
+  {
+   "eventNumber": 256,
+   "year": 2020,
+   "fighter1": "Deiveson Figueiredo",
+   "fighter2": "Brandon Moreno",
+   "weightClass": "Flyweight",
+   "title": true,
+   "clue": "A wild, back-and-forth flyweight classic ends in a majority draw, with the belt retained."
+  },
+  {
+   "eventNumber": 258,
+   "year": 2021,
+   "fighter1": "Kamaru Usman",
+   "fighter2": "Gilbert Burns",
+   "weightClass": "Welterweight",
+   "title": true,
+   "clue": "A champion survives an early scare to knock out a former training partner in the third."
+  },
+  {
+   "eventNumber": 259,
+   "year": 2021,
+   "fighter1": "Jan Błachowicz",
+   "fighter2": "Israel Adesanya",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A middleweight champion moving up loses a decision, denied in his bid to hold two belts."
+  },
+  {
+   "eventNumber": 260,
+   "year": 2021,
+   "fighter1": "Stipe Miocic",
+   "fighter2": "Francis Ngannou",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A terrifying puncher avenges a loss and takes the heavyweight belt with a second-round knockout."
+  },
+  {
+   "eventNumber": 262,
+   "year": 2021,
+   "fighter1": "Charles Oliveira",
+   "fighter2": "Michael Chandler",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "A Brazilian survives a first-round scare to knock out a newcomer for a vacant lightweight belt."
+  },
+  {
+   "eventNumber": 263,
+   "year": 2021,
+   "fighter1": "Israel Adesanya",
+   "fighter2": "Marvin Vettori",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A champion cruises to a shutout decision in a rematch of an old split decision."
+  },
+  {
+   "eventNumber": 265,
+   "year": 2021,
+   "fighter1": "Derrick Lewis",
+   "fighter2": "Ciryl Gane",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "A slick technician stops a knockout artist to win an interim heavyweight belt."
+  },
+  {
+   "eventNumber": 267,
+   "year": 2021,
+   "fighter1": "Jan Błachowicz",
+   "fighter2": "Glover Teixeira",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "venue": "Abu Dhabi",
+   "clue": "A 42-year-old submits the champion in the second round to finally win the belt."
+  },
+  {
+   "eventNumber": 271,
+   "year": 2022,
+   "fighter1": "Israel Adesanya",
+   "fighter2": "Robert Whittaker",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A champion out-points the former titleholder again in a closer-than-expected rematch."
+  },
+  {
+   "eventNumber": 272,
+   "year": 2022,
+   "fighter1": "Colby Covington",
+   "fighter2": "Jorge Masvidal",
+   "weightClass": "Welterweight",
+   "clue": "Two former friends turned bitter enemies settle it, with the wrestler winning a lopsided decision."
+  },
+  {
+   "eventNumber": 273,
+   "year": 2022,
+   "fighter1": "Alexander Volkanovski",
+   "fighter2": "Chan Sung Jung",
+   "weightClass": "Featherweight",
+   "title": true,
+   "clue": "A dominant champion stops a beloved challenger in the fourth to defend the featherweight belt."
+  },
+  {
+   "eventNumber": 274,
+   "year": 2022,
+   "fighter1": "Charles Oliveira",
+   "fighter2": "Justin Gaethje",
+   "weightClass": "Lightweight",
+   "clue": "A Brazilian submits a rushing challenger in the first, though he'd already lost the belt on the scale."
+  },
+  {
+   "eventNumber": 275,
+   "year": 2022,
+   "fighter1": "Glover Teixeira",
+   "fighter2": "Jiří Procházka",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "venue": "Singapore",
+   "clue": "A challenger sinks a rear-naked choke with less than 30 seconds left to steal the belt in a classic."
+  },
+  {
+   "eventNumber": 277,
+   "year": 2022,
+   "fighter1": "Julianna Peña",
+   "fighter2": "Amanda Nunes",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "clue": "A dominant former champion reclaims her belt with a one-sided decision in the rematch."
+  },
+  {
+   "eventNumber": 278,
+   "year": 2022,
+   "fighter1": "Kamaru Usman",
+   "fighter2": "Leon Edwards",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "Salt Lake City, Utah",
+   "clue": "Losing on the cards, a challenger lands a head kick with under a minute left for a stunning upset."
+  },
+  {
+   "eventNumber": 279,
+   "year": 2022,
+   "fighter1": "Nate Diaz",
+   "fighter2": "Tony Ferguson",
+   "weightClass": "Welterweight",
+   "clue": "After a chaotic weigh-in reshuffle, a Stockton veteran submits a fan favorite in his contract's final fight."
+  },
+  {
+   "eventNumber": 280,
+   "year": 2022,
+   "fighter1": "Charles Oliveira",
+   "fighter2": "Islam Makhachev",
+   "weightClass": "Lightweight",
+   "title": true,
+   "venue": "Abu Dhabi",
+   "clue": "A grappling ace submits a Brazilian in the second to win a vacant lightweight belt."
+  },
+  {
+   "eventNumber": 282,
+   "year": 2022,
+   "fighter1": "Jan Błachowicz",
+   "fighter2": "Magomed Ankalaev",
+   "weightClass": "Light Heavyweight",
+   "clue": "A fight for a vacant light-heavyweight belt ends in a controversial split draw, leaving it empty."
+  },
+  {
+   "eventNumber": 283,
+   "year": 2023,
+   "fighter1": "Glover Teixeira",
+   "fighter2": "Jamahal Hill",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A younger challenger out-points a 43-year-old legend to win a vacant belt in his final fight."
+  },
+  {
+   "eventNumber": 285,
+   "year": 2023,
+   "fighter1": "Jon Jones",
+   "fighter2": "Ciryl Gane",
+   "weightClass": "Heavyweight",
+   "title": true,
+   "clue": "Returning after years away and moving up a division, a great submits a striker in the first for a vacant belt."
+  },
+  {
+   "eventNumber": 286,
+   "year": 2023,
+   "fighter1": "Leon Edwards",
+   "fighter2": "Kamaru Usman",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "London, England",
+   "clue": "A champion out-points his rival in their London trilogy bout to close the series."
+  },
+  {
+   "eventNumber": 287,
+   "year": 2023,
+   "fighter1": "Alex Pereira",
+   "fighter2": "Israel Adesanya",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A champion avenges a knockout loss with a knockout of his own to reclaim the belt."
+  },
+  {
+   "eventNumber": 288,
+   "year": 2023,
+   "fighter1": "Aljamain Sterling",
+   "fighter2": "Henry Cejudo",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "clue": "A champion out-points a returning Olympic gold medalist to defend the bantamweight belt."
+  },
+  {
+   "eventNumber": 289,
+   "year": 2023,
+   "fighter1": "Amanda Nunes",
+   "fighter2": "Irene Aldana",
+   "weightClass": "Women's Bantamweight",
+   "title": true,
+   "venue": "Vancouver, British Columbia",
+   "clue": "A two-division great cruises to a decision and then retires as champion in the cage."
+  },
+  {
+   "eventNumber": 290,
+   "year": 2023,
+   "fighter1": "Alexander Volkanovski",
+   "fighter2": "Yair Rodríguez",
+   "weightClass": "Featherweight",
+   "title": true,
+   "clue": "A dominant champion stops a flashy challenger in the third to unify the featherweight belt."
+  },
+  {
+   "eventNumber": 291,
+   "year": 2023,
+   "fighter1": "Dustin Poirier",
+   "fighter2": "Justin Gaethje",
+   "weightClass": "Lightweight",
+   "clue": "A head kick avenges an old loss and wins a 'baddest' belt in a violent rematch."
+  },
+  {
+   "eventNumber": 292,
+   "year": 2023,
+   "fighter1": "Aljamain Sterling",
+   "fighter2": "Sean O'Malley",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "venue": "Boston, Massachusetts",
+   "clue": "A flashy challenger knocks out the champion in the second to take the bantamweight belt."
+  },
+  {
+   "eventNumber": 293,
+   "year": 2023,
+   "fighter1": "Israel Adesanya",
+   "fighter2": "Sean Strickland",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A brash pressure-fighter shocks the champion, dropping him early and cruising to a decision upset."
+  },
+  {
+   "eventNumber": 295,
+   "year": 2023,
+   "fighter1": "Jiří Procházka",
+   "fighter2": "Alex Pereira",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "venue": "New York City, New York",
+   "clue": "A former kickboxer stops a returning ex-champion late to win a vacant light-heavyweight belt."
+  },
+  {
+   "eventNumber": 297,
+   "year": 2024,
+   "fighter1": "Sean Strickland",
+   "fighter2": "Dricus du Plessis",
+   "weightClass": "Middleweight",
+   "title": true,
+   "venue": "Toronto, Ontario",
+   "clue": "A South African edges the champion in a razor-thin split decision to take the middleweight belt."
+  },
+  {
+   "eventNumber": 298,
+   "year": 2024,
+   "fighter1": "Alexander Volkanovski",
+   "fighter2": "Ilia Topuria",
+   "weightClass": "Featherweight",
+   "title": true,
+   "clue": "An undefeated challenger knocks out the long-reigning champion to take the featherweight belt."
+  },
+  {
+   "eventNumber": 299,
+   "year": 2024,
+   "fighter1": "Sean O'Malley",
+   "fighter2": "Marlon Vera",
+   "weightClass": "Bantamweight",
+   "title": true,
+   "clue": "A champion avenges the only loss on his record with a clear decision defense."
+  },
+  {
+   "eventNumber": 301,
+   "year": 2024,
+   "fighter1": "Alexandre Pantoja",
+   "fighter2": "Steve Erceg",
+   "weightClass": "Flyweight",
+   "title": true,
+   "venue": "Rio de Janeiro, Brazil",
+   "clue": "A champion out-points a late-notice underdog to defend the flyweight belt at home."
+  },
+  {
+   "eventNumber": 302,
+   "year": 2024,
+   "fighter1": "Islam Makhachev",
+   "fighter2": "Dustin Poirier",
+   "weightClass": "Lightweight",
+   "title": true,
+   "clue": "A champion escapes a late guillotine scare and submits the veteran in the fifth."
+  },
+  {
+   "eventNumber": 304,
+   "year": 2024,
+   "fighter1": "Leon Edwards",
+   "fighter2": "Belal Muhammad",
+   "weightClass": "Welterweight",
+   "title": true,
+   "venue": "Manchester, England",
+   "clue": "A relentless challenger out-grapples the champion at home to take the welterweight belt."
+  },
+  {
+   "eventNumber": 305,
+   "year": 2024,
+   "fighter1": "Dricus du Plessis",
+   "fighter2": "Israel Adesanya",
+   "weightClass": "Middleweight",
+   "title": true,
+   "clue": "A champion submits a former titleholder in the fourth to defend the middleweight belt."
+  },
+  {
+   "eventNumber": 307,
+   "year": 2024,
+   "fighter1": "Alex Pereira",
+   "fighter2": "Khalil Rountree Jr.",
+   "weightClass": "Light Heavyweight",
+   "title": true,
+   "clue": "A champion weathers a game challenger before a fourth-round stoppage in his third defense of the year."
+  },
+  {
+   "eventNumber": 308,
+   "year": 2024,
+   "fighter1": "Ilia Topuria",
+   "fighter2": "Max Holloway",
+   "weightClass": "Featherweight",
+   "title": true,
+   "venue": "Abu Dhabi",
+   "clue": "An undefeated champion knocks out a beloved veteran to defend the featherweight belt."
   }
  ]
 }
