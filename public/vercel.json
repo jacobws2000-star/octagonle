@@ -6,6 +6,12 @@
       "has": [{ "type": "host", "value": "octagonle.vercel.app" }],
       "destination": "https://weiddle.com/$1",
       "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "weiddle.vercel.app" }],
+      "destination": "https://weiddle.com/$1",
+      "permanent": false
     }
   ],
   "headers": [
