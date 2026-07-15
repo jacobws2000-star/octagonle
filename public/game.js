@@ -797,9 +797,10 @@ attachAutocomplete(
   { submitOnEnter: true }
 );
 el("play-again-btn").addEventListener("click", newGame);
+const SHARE_URL = "https://weiddle.com";   // canonical origin; points live in its localStorage
 el("share-btn").addEventListener("click", () => {
   const label = isTitleMode() ? "Weiddle Title Defense" : "Weiddle";
-  const line = `${label} — solved in ${guessCount} guesses ⏱`;
+  const line = `${label} — solved in ${guessCount} guesses ⏱\n${SHARE_URL}`;
   if (navigator.clipboard) navigator.clipboard.writeText(line);
   el("share-btn").textContent = "Copied!";
   setTimeout(() => el("share-btn").textContent = "↗ Share", 1500);
@@ -877,8 +878,8 @@ el("daily-share").addEventListener("click", () => {
   const rec = getDailyRecord(kind) || {};
   const streak = localStorage.getItem("octagonle_daily_streak") || "0";
   const line = kind === "moments"
-    ? `Weiddle Daily Moments — ${rec.score}/${rec.max} · streak ${streak} 🥊`
-    : `Weiddle Daily (${dailyKey()}) — ${rec.won ? rec.guesses + " guesses" : "X"} · streak ${streak} 🥊`;
+    ? `Weiddle Daily Moments — ${rec.score}/${rec.max} · streak ${streak} 🥊\n${SHARE_URL}`
+    : `Weiddle Daily (${dailyKey()}) — ${rec.won ? rec.guesses + " guesses" : "X"} · streak ${streak} 🥊\n${SHARE_URL}`;
   if (navigator.clipboard) navigator.clipboard.writeText(line);
   el("daily-share").textContent = "Copied!";
   setTimeout(() => el("daily-share").textContent = "↗ Share", 1500);
