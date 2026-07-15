@@ -63,10 +63,17 @@ function finishDailyMoments(){
 function buildMomentsAutocomplete(){
   if (buildMomentsAutocomplete._done) return;   // attach the widgets once
   buildMomentsAutocomplete._done = true;
-  const names = new Set();
-  if (Array.isArray(DATA)) DATA.forEach(f => names.add(f.name));
-  MOMENTS.forEach(m => { names.add(m.fighter1); names.add(m.fighter2); });
-  const sorted = [...names].sort();
+  // Keyed by mNorm, not by the raw string: the roster and the moments spell the
+  // same fighter differently ("Yair Rodriguez" vs "Yair Rodríguez", "BJ Penn" vs
+  // "B.J. Penn"), so a Set of raw names offers both spellings as separate
+  // suggestions. mNorm is what scoring compares, so either spelling is correct —
+  // the duplicate is purely cosmetic. DATA is added first and wins the key, which
+  // keeps the dropdown on the roster spelling used everywhere else on the site.
+  const byKey = new Map();
+  const add = n => { const k = mNorm(n); if (k && !byKey.has(k)) byKey.set(k, n); };
+  if (Array.isArray(DATA)) DATA.forEach(f => add(f.name));
+  MOMENTS.forEach(m => { add(m.fighter1); add(m.fighter2); });
+  const sorted = [...byKey.values()].sort();
   const getNames = () => sorted;
   attachAutocomplete(el("m-f1"), getNames, () => {});
   attachAutocomplete(el("m-f2"), getNames, () => {});
